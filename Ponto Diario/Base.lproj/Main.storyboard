@@ -11,7 +11,7 @@
         <!--Calculadora de Ponto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ponto_Diario" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Ponto_Diario" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
         <!--Configurações-->
         <scene sceneID="zEF-ot-dN2">
             <objects>
-                <viewController id="3gd-Zb-rLk" sceneMemberID="viewController">
+                <viewController id="3gd-Zb-rLk" customClass="ConfigurationViewController" customModule="Ponto_Diario" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B5c-TC-kl2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,6 +266,11 @@
                     <navigationItem key="navigationItem" title="Configurações" id="HMq-Wl-swp">
                         <barButtonItem key="backBarButtonItem" title=" " id="gh4-as-GoA"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lunchBreakDurationTextField" destination="PPY-vF-1cd" id="iTJ-dk-zCa"/>
+                        <outlet property="lunchBreakTimeTextField" destination="wEx-hg-gMK" id="Zpo-R8-AIQ"/>
+                        <outlet property="requiredDailyHoursTextField" destination="4WE-Wp-92R" id="qXG-jt-pk6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9g-0T-uWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
