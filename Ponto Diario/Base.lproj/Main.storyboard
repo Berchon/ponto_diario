@@ -222,6 +222,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
                                     <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveData:" destination="3gd-Zb-rLk" eventType="touchUpInside" id="qze-Zq-v78"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de intervalo do almoço (hh:mm)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sl-07-Ycc">
                                 <rect key="frame" x="16" y="373.33333333333331" width="393" height="21"/>

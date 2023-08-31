@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866112AA11EA7006310C5 /* ConfigurationViewController.swift */; };
+		766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */; };
 		76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */; };
 		76CF952E2A9FB7B200BD5358 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF952D2A9FB7B200BD5358 /* SceneDelegate.swift */; };
 		76CF95302A9FB7B200BD5358 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF952F2A9FB7B200BD5358 /* HomeViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		766866112AA11EA7006310C5 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
 		76CF95282A9FB7B200BD5358 /* Ponto Diario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ponto Diario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76CF952D2A9FB7B200BD5358 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				76CF95342A9FB7B400BD5358 /* Assets.xcassets */,
 				76CF95362A9FB7B400BD5358 /* LaunchScreen.storyboard */,
 				76CF95392A9FB7B400BD5358 /* Info.plist */,
+				766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */,
 			);
 			path = "Ponto Diario";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				76CF95302A9FB7B200BD5358 /* HomeViewController.swift in Sources */,
 				766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */,
+				766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */,
 				76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */,
 				76CF952E2A9FB7B200BD5358 /* SceneDelegate.swift in Sources */,
 			);

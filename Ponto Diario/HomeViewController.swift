@@ -8,6 +8,11 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    // MARK: Properties
+    var requiredDailyHours = "08:48"
+    var lunchBreakTime = "12:10"
+    var lunchBreakDuration = "01:00"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,9 +20,18 @@ class HomeViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ConfigurationViewController {
-            destination.requiredDailyHours = "08:48"
-            destination.lunchBreakTime = "12:10"
-            destination.lunchBreakDuration = "01:00"
+            destination.delegate = self
+            destination.requiredDailyHours = requiredDailyHours
+            destination.lunchBreakTime = lunchBreakTime
+            destination.lunchBreakDuration = lunchBreakDuration
         }
+    }
+}
+
+extension HomeViewController: HomeViewControllerDelegate {
+    func updateDataSource(requiredDailyHours: String, lunchBreakTime: String, lunchBreakDuration: String) {
+        self.requiredDailyHours = requiredDailyHours
+        self.lunchBreakTime = lunchBreakTime
+        self.lunchBreakDuration = lunchBreakDuration
     }
 }
