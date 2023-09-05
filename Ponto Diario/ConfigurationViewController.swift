@@ -10,46 +10,44 @@ import UIKit
 class ConfigurationViewController: UIViewController {
     
     // MARK: Properties
-    var requiredDailyHours = ""
-    var lunchBreakTime = ""
-    var lunchBreakDuration = ""
+    let helper = Helper()
+    
+    var requiredDailyHours: TimeInterval = TimeInterval()
+    var startWork: TimeInterval = TimeInterval()
+    var lunchBreakTime: TimeInterval = TimeInterval()
+    var lunchBreakDuration: TimeInterval = TimeInterval()
     
     weak var delegate: HomeViewControllerDelegate?
 
     // MARK: UI Components reference
-    @IBOutlet weak var requiredDailyHoursTextField: UITextField!
-    @IBOutlet weak var lunchBreakTimeTextField: UITextField!
-    @IBOutlet weak var lunchBreakDurationTextField: UITextField!
+    @IBOutlet weak var requiredDailyHoursDatePicker: UIDatePicker!
+    @IBOutlet weak var startWordDatePicker: UIDatePicker!
+    @IBOutlet weak var lunchBreakTimeDatePicker: UIDatePicker!
+    @IBOutlet weak var lunchBreakDurationDatePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        requiredDailyHoursTextField.text = requiredDailyHours
-        lunchBreakTimeTextField.text = lunchBreakTime
-        lunchBreakDurationTextField.text = lunchBreakDuration
+        requiredDailyHoursDatePicker.contentHorizontalAlignment = .left
+        startWordDatePicker.contentHorizontalAlignment = .left
+        lunchBreakTimeDatePicker.contentHorizontalAlignment = .left
+        lunchBreakDurationDatePicker.contentHorizontalAlignment = .left
+        updateDatePickers()
+    }
+    
+    func updateDatePickers() {
+        requiredDailyHoursDatePicker.date = helper.todayDate(with: requiredDailyHours)
+        startWordDatePicker.date = helper.todayDate(with: startWork)
+        lunchBreakTimeDatePicker.date = helper.todayDate(with: lunchBreakTime)
+        lunchBreakDurationDatePicker.date = helper.todayDate(with: lunchBreakDuration)
     }
     
     @IBAction func saveData(_ sender: Any) {
-        guard let homeViewController = delegate else {
-            print("Erro ao atualizar a fonte de dados")
-            return
-        }
-        
-        guard let requiredDailyHours = requiredDailyHoursTextField.text else {
-            print("Erro ao obter a carga horária diária")
-            return
-        }
-        guard let lunchBreakTime = lunchBreakTimeTextField.text else {
-            print("Erro ao obter a previsão de saída para o almoço")
-            return
-        }
-        guard let lunchBreakDuration = lunchBreakDurationTextField.text else {
-            print("Erro ao obter otempo de intervalo para o almoço")
-            return
-        }
-        
-        homeViewController.updateDataSource(requiredDailyHours: requiredDailyHours, lunchBreakTime: lunchBreakTime, lunchBreakDuration: lunchBreakDuration)
-        
+        let dailyHours = helper.secondsSinceMidnight(date: requiredDailyHoursDatePicker.date)
+        let startWork = helper.secondsSinceMidnight(date: startWordDatePicker.date)
+        let lunchTime = helper.secondsSinceMidnight(date: lunchBreakTimeDatePicker.date)
+        let lunchDuration = helper.secondsSinceMidnight(date: lunchBreakDurationDatePicker.date)
+
+        delegate?.updateDataSource(requiredDailyHours: dailyHours, startWork: startWork, lunchBreakTime: lunchTime, lunchBreakDuration: lunchDuration)
         print("Dados atualizados com sucesso")
     }
 }
