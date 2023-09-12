@@ -9,11 +9,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    // TODO: Persistence data
+    // TODO: Message Snackbar
+    // TODO: fix alerts messages
+    
     // MARK: Properties
     let helper = Helper()
     
-    var requiredDailyHours: TimeInterval = 5 * 3600
-    var startWork: TimeInterval = 8 * 3600 + 0 * 60
+    var requiredDailyHours: TimeInterval = 8 * 3600
+    var startWork: TimeInterval = 8 * 3600
     var lunchBreakTime: TimeInterval = 12 * 3600
     var lunchBreakDuration: TimeInterval = 1 * 3600
     
@@ -39,6 +43,7 @@ class HomeViewController: UIViewController {
         endWorkTimeDatePicker.contentHorizontalAlignment = .left
 
         updateDatePickersWithConfiguration()
+        calculateTotalWorkTime(String())
     }
     
     @IBAction func startWorkValueChanged(_ sender: Any) {
@@ -60,7 +65,7 @@ class HomeViewController: UIViewController {
         
         if lunchTimeStart < startWork {
             lunchTimeStartDatePicker.date = lunchTimeStartDatePickerLastValue
-            print("O horário de saída para o almoço não pode ser menor que o horário entradano trabalho!")
+            print("O horário de saída para o almoço não pode ser menor que o horário entrada no trabalho!")
             return
         }
         
@@ -90,7 +95,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func endWorkValueChanged(_ sender: Any) {
         let lunchTimeEnd = lunchTimeEndDatePicker.date.timeIntervalSinceReferenceDate
-        var endWork = endWorkTimeDatePicker.date.timeIntervalSinceReferenceDate
+        let endWork = endWorkTimeDatePicker.date.timeIntervalSinceReferenceDate
         if endWork < lunchTimeEnd {
             endWorkTimeDatePicker.date = endWorkTimeDatePickerLastValue
             print("O horário de saída não pode ser menor que o horário de retorno do almoço!")
@@ -103,10 +108,9 @@ class HomeViewController: UIViewController {
         let startWork = startWorkDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeStart = lunchTimeStartDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeEnd = lunchTimeEndDatePicker.date.timeIntervalSinceReferenceDate
-        var endWork = endWorkTimeDatePicker.date.timeIntervalSinceReferenceDate
+        let endWork = endWorkTimeDatePicker.date.timeIntervalSinceReferenceDate
         
         let workday = (endWork - lunchTimeEnd) + (lunchTimeStart - startWork)
-        print(workday)
         let overtime = workday - requiredDailyHours
         workdayDurationValueLabel.text = helper.timeIntervalToHHmm(using: workday)
         if Int(overtime) == 0 {

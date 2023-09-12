@@ -18,13 +18,13 @@ class Helper {
     }
     
     func todayDate(with timeInterval: TimeInterval) -> Date {
-        let calendar = Calendar.current
+//        let calendar = Calendar.current
         let midnightToday = calendar.startOfDay(for: .now)
         return midnightToday.addingTimeInterval(timeInterval)
     }
     
     func secondsSinceMidnight(date: Date) -> TimeInterval {
-        let calendar = Calendar.current
+//        let calendar = Calendar.current
         let midnightToday = calendar.startOfDay(for: .now)
         let numerOfSecondsSinceMidnight = date.timeIntervalSince(midnightToday)
 
@@ -43,8 +43,8 @@ class Helper {
         return formattedTime
     }
     
-    
-    
+    //
+    // I'm not using the functions below, but I decided to leave them
     
     func stringToDate(using timeString: String) -> Date? {
         guard let timeComponents = dateFormatter.date(from: timeString) else {
@@ -67,12 +67,12 @@ class Helper {
         guard let hours = components.hour, let minutes = components.minute else {
             return nil
         }
-        
-        return TimeInterval(hours * 3600 + minutes * 60)
+        let numberSecondsInAnHour = 3600
+        let numberSecondsInAMinute = 60
+        return TimeInterval(hours * numberSecondsInAnHour + minutes * numberSecondsInAMinute)
     }
     
     func timeIntervalToDate(using timeInterval: TimeInterval) -> Date? {
-//        let date = Date(timeIntervalSinceNow: timeInterval)
         guard let referenceDate = calendar.date(bySettingHour: 0, minute: 0, second: 0, of: currentDate) else {
             return nil
         }
