@@ -9,7 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    // TODO: Persistence data
     // TODO: Message Snackbar
     // TODO: fix alerts messages
     
@@ -44,6 +43,7 @@ class HomeViewController: UIViewController {
         lunchTimeEndDatePicker.contentHorizontalAlignment = .left
         endWorkTimeDatePicker.contentHorizontalAlignment = .left
 
+        loadData()
         updateDatePickersWithConfiguration()
         calculateTotalWorkTime(String())
     }
@@ -170,6 +170,17 @@ class HomeViewController: UIViewController {
         lunchTimeStartDatePickerLastValue = lunchTimeStartDatePicker.date
         lunchTimeEndDatePickerLastValue = lunchTimeEndDatePicker.date
         endWorkTimeDatePickerLastValue = endWorkTimeDatePicker.date
+    }
+    
+    func loadData() {
+        let loadConfiguration = helper.loadData()
+        switch loadConfiguration {
+        case .success(let loadedConfiguration):
+            configuration = loadedConfiguration
+        case .failure(let error):
+            print("\(error.localizedDescription) Usando a configuração padrão")
+            print("\(error.errorDescription ?? "") Usando a configuração padrão")
+        }
     }
 }
 

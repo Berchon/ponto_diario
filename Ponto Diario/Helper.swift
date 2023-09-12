@@ -17,14 +17,36 @@ class Helper {
         dateFormatter.dateFormat = "HH:mm"
     }
     
+    func saveData(with configuration: ConfigurationModel) -> Result<Void, CustomError> {
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(configuration)
+            UserDefaults.standard.set(data, forKey: "configuration")
+            return .success(())
+        } catch {
+            return .failure(.missingData(message: "Erro ao salvar as com figurações."))
+        }
+    }
+    
+    func loadData() -> Result<ConfigurationModel, CustomError> {
+        guard let data = UserDefaults.standard.data(forKey: "configuration") else {
+            return .failure(.missingData(message: "Não foram encontradas configurações salvas."))
+        }
+        let decoder = JSONDecoder()
+        do {
+            let configuration = try decoder.decode(ConfigurationModel.self, from: data)
+            return .success(configuration)
+        } catch {
+            return .failure(.missingData(message: "Não foi possível recuperar as configurações salvas."))
+        }
+    }
+    
     func todayDate(with timeInterval: TimeInterval) -> Date {
-//        let calendar = Calendar.current
         let midnightToday = calendar.startOfDay(for: .now)
         return midnightToday.addingTimeInterval(timeInterval)
     }
     
     func secondsSinceMidnight(date: Date) -> TimeInterval {
-//        let calendar = Calendar.current
         let midnightToday = calendar.startOfDay(for: .now)
         let numerOfSecondsSinceMidnight = date.timeIntervalSince(midnightToday)
 

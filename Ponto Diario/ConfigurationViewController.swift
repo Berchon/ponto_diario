@@ -49,11 +49,17 @@ class ConfigurationViewController: UIViewController {
         configuration.lunchBreakTime = helper.secondsSinceMidnight(date: lunchBreakTimeDatePicker.date)
         configuration.lunchBreakDuration = helper.secondsSinceMidnight(date: lunchBreakDurationDatePicker.date)
 
-        // TODO: Save data configuration here.
-        // Use optionals e only call delegate and print in case success
+        let saveResult = helper.saveData(with: configuration)
+        switch saveResult {
+        case .success:
+            delegate?.updateDataSource(with: configuration)
+            
+            print("Dados atualizados com sucesso")
+        case .failure(let error):
+            print(error.localizedDescription)
+            print(error.errorDescription ?? "")
+        }
         
-        delegate?.updateDataSource(with: configuration)
         
-        print("Dados atualizados com sucesso")
     }
 }

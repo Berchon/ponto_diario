@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct ConfigurationModel {
+internal struct ConfigurationModel: Codable {
     internal var requiredDailyHours: TimeInterval
     internal var startWork: TimeInterval
     internal var lunchBreakTime: TimeInterval
