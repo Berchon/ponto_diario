@@ -399,7 +399,7 @@
                         <outlet property="lunchBreakDurationDatePicker" destination="33E-Su-maO" id="4oF-M0-b5j"/>
                         <outlet property="lunchBreakTimeDatePicker" destination="n2Q-kY-qci" id="L90-dn-u9Q"/>
                         <outlet property="requiredDailyHoursDatePicker" destination="Ocr-Tf-apj" id="SSA-0G-b0R"/>
-                        <outlet property="startWordDatePicker" destination="oeZ-Lu-r4a" id="JbE-jM-nwU"/>
+                        <outlet property="startWorkDatePicker" destination="oeZ-Lu-r4a" id="OcP-LE-Gaf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="col-dX-pFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

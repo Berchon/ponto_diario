@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HomeViewControllerDelegate: AnyObject {
-    func updateDataSource(requiredDailyHours: TimeInterval, startWork: TimeInterval, lunchBreakTime: TimeInterval, lunchBreakDuration: TimeInterval)
+    func updateDataSource(with configurations: ConfigurationModel)
 }
