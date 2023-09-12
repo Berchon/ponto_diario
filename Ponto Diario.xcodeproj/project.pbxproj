@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */; };
 		766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766781DC2AA42C6D00D2A156 /* Helper.swift */; };
 		766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866112AA11EA7006310C5 /* ConfigurationViewController.swift */; };
 		766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		766781DC2AA42C6D00D2A156 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		766866112AA11EA7006310C5 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				766781DC2AA42C6D00D2A156 /* Helper.swift */,
 				76910A5A2AAB751F0085868D /* CustomDatePicker.swift */,
 				768C314F2AAE4391000EA015 /* CardView.swift */,
+				765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */,
 			);
 			path = "Ponto Diario";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				76CF95302A9FB7B200BD5358 /* HomeViewController.swift in Sources */,
 				766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */,
 				76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */,
+				765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */,
 				766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */,
 				766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */,
 				76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */,

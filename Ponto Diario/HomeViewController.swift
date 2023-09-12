@@ -16,10 +16,12 @@ class HomeViewController: UIViewController {
     // MARK: Properties
     let helper = Helper()
     
-    var requiredDailyHours: TimeInterval = 8 * 3600
-    var startWork: TimeInterval = 8 * 3600
-    var lunchBreakTime: TimeInterval = 12 * 3600
-    var lunchBreakDuration: TimeInterval = 1 * 3600
+    var configuration: ConfigurationModel = ConfigurationModel(
+        requiredDailyHours: 8 * 3600,
+        startWork: 8 * 3600,
+        lunchBreakTime: 12 * 3600,
+        lunchBreakDuration: 1 * 3600
+    )
     
     var startWorkDatePickerLastValue = Date()
     var lunchTimeStartDatePickerLastValue = Date()
@@ -72,7 +74,6 @@ class HomeViewController: UIViewController {
         updateDatePickers()
     }
 
-    
     @IBAction func lunchTimeEndValueChanged(_ sender: Any) {
         let startWork = startWorkDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeStart = lunchTimeStartDatePicker.date.timeIntervalSinceReferenceDate
@@ -84,10 +85,10 @@ class HomeViewController: UIViewController {
             return
         }
         let lunchDuration = lunchTimeEnd - lunchTimeStart
-        var endWork = startWork + requiredDailyHours + lunchDuration
+        var endWork = startWork + configuration.requiredDailyHours + lunchDuration
 
         let morningWorkDuration = lunchTimeStart - startWork
-        if morningWorkDuration >= requiredDailyHours {
+        if morningWorkDuration >= configuration.requiredDailyHours {
             endWork = lunchTimeEnd
         }
         endWorkTimeDatePicker.date = Date(timeIntervalSinceReferenceDate: endWork)
@@ -111,7 +112,7 @@ class HomeViewController: UIViewController {
         let endWork = endWorkTimeDatePicker.date.timeIntervalSinceReferenceDate
         
         let workday = (endWork - lunchTimeEnd) + (lunchTimeStart - startWork)
-        let overtime = workday - requiredDailyHours
+        let overtime = workday - configuration.requiredDailyHours
         workdayDurationValueLabel.text = helper.timeIntervalToHHmm(using: workday)
         if Int(overtime) == 0 {
             overtimeDurationTextLabel.isHidden = true
@@ -130,21 +131,18 @@ class HomeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ConfigurationViewController {
             destination.delegate = self
-            destination.requiredDailyHours = requiredDailyHours
-            destination.startWork = startWork
-            destination.lunchBreakTime = lunchBreakTime
-            destination.lunchBreakDuration = lunchBreakDuration
+            destination.configuration = configuration
         }
     }
 
     func updateDatePickers() {
         let startWork = startWorkDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeStart = lunchTimeStartDatePicker.date.timeIntervalSinceReferenceDate
-        var lunchTimeEnd = lunchTimeStart + lunchBreakDuration
-        var endWork = startWork + requiredDailyHours + lunchBreakDuration
+        var lunchTimeEnd = lunchTimeStart + configuration.lunchBreakDuration
+        var endWork = startWork + configuration.requiredDailyHours + configuration.lunchBreakDuration
 
         let morningWorkDuration = lunchTimeStart - startWork
-        if morningWorkDuration >= requiredDailyHours {
+        if morningWorkDuration >= configuration.requiredDailyHours {
             lunchTimeEnd = lunchTimeStart
             endWork = lunchTimeStart
         }
@@ -156,11 +154,11 @@ class HomeViewController: UIViewController {
     }
     
     func updateDatePickersWithConfiguration() {
-        let lunchTimeEnd = lunchBreakTime + lunchBreakDuration
-        let endWork = startWork + requiredDailyHours + lunchBreakDuration
+        let lunchTimeEnd = configuration.lunchBreakTime + configuration.lunchBreakDuration
+        let endWork = configuration.startWork + configuration.requiredDailyHours + configuration.lunchBreakDuration
         
-        startWorkDatePicker.date = helper.todayDate(with: startWork)
-        lunchTimeStartDatePicker.date = helper.todayDate(with: lunchBreakTime)
+        startWorkDatePicker.date = helper.todayDate(with: configuration.startWork)
+        lunchTimeStartDatePicker.date = helper.todayDate(with: configuration.lunchBreakTime)
         lunchTimeEndDatePicker.date = helper.todayDate(with: lunchTimeEnd)
         endWorkTimeDatePicker.date = helper.todayDate(with: endWork)
         
@@ -176,11 +174,8 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeViewControllerDelegate {
-    func updateDataSource(requiredDailyHours: TimeInterval, startWork: TimeInterval, lunchBreakTime: TimeInterval, lunchBreakDuration: TimeInterval) {
-        self.requiredDailyHours = requiredDailyHours
-        self.startWork = startWork
-        self.lunchBreakTime = lunchBreakTime
-        self.lunchBreakDuration = lunchBreakDuration
+    func updateDataSource(with configurations: ConfigurationModel) {
+        configuration = configurations
         updateDatePickersWithConfiguration()
     }
 }
