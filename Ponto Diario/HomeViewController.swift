@@ -106,6 +106,12 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func calculateTotalWorkTime(_ sender: Any) {
+        
+        let toastView = ToastView.loadFromNib(style: .neutral)
+        toastView.setMessage("Deu certo o toast bar. Configuradinho muito bem!")
+        toastView.show()
+        
+        
         let startWork = startWorkDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeStart = lunchTimeStartDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeEnd = lunchTimeEndDatePicker.date.timeIntervalSinceReferenceDate
