@@ -5,18 +5,49 @@
 //  Created by Luciano Da Silva Berchon on 30/08/23.
 //
 
+import Foundation
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    deinit {
+        UserDefaults.standard.removeObserver(self, forKeyPath: "theme", context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+        guard
+            let change = change,
+            object != nil,
+            keyPath == "theme",
+            let themeValue = change[.newKey] as? String,
+            let theme = Theme(rawValue: themeValue)?.uiInterfaceStyle
+        else {
+            return
+        }
+
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveLinear, animations: { [weak self] in
+            self?.window?.overrideUserInterfaceStyle = theme
+        }, completion: .none)
+    }
+    
+    func setInitialTheme() {
+        if let savedTheme = UserDefaults.standard.string(forKey: "theme") {
+            let theme = Theme(rawValue: savedTheme) ?? .light
+            window?.overrideUserInterfaceStyle = theme.uiInterfaceStyle
+        }
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        setInitialTheme()
+        
+        UserDefaults.standard.addObserver(self, forKeyPath: "theme", options: [.new], context: nil)
         
     }
 

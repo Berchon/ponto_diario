@@ -10,6 +10,7 @@
 		760435352AB24381008E3FA4 /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760435342AB24381008E3FA4 /* ToastStyle.swift */; };
 		760435372AB2446F008E3FA4 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760435362AB2446F008E3FA4 /* ToastView.xib */; };
 		760435392AB24B9A008E3FA4 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760435382AB24B9A008E3FA4 /* ToastView.swift */; };
+		7604353B2AB29AB8008E3FA4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604353A2AB29AB8008E3FA4 /* Theme.swift */; };
 		765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */; };
 		765FF3F82AB10F8800A6EA05 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FF3F72AB10F8800A6EA05 /* CustomError.swift */; };
 		766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766781DC2AA42C6D00D2A156 /* Helper.swift */; };
@@ -29,6 +30,7 @@
 		760435342AB24381008E3FA4 /* ToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
 		760435362AB2446F008E3FA4 /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
 		760435382AB24B9A008E3FA4 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7604353A2AB29AB8008E3FA4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		765FF3F72AB10F8800A6EA05 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		766781DC2AA42C6D00D2A156 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				760435342AB24381008E3FA4 /* ToastStyle.swift */,
 				760435362AB2446F008E3FA4 /* ToastView.xib */,
 				760435382AB24B9A008E3FA4 /* ToastView.swift */,
+				7604353A2AB29AB8008E3FA4 /* Theme.swift */,
 			);
 			path = "Ponto Diario";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */,
 				765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */,
 				765FF3F82AB10F8800A6EA05 /* CustomError.swift in Sources */,
+				7604353B2AB29AB8008E3FA4 /* Theme.swift in Sources */,
 				766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */,
 				766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */,
 				76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */,

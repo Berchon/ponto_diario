@@ -9,8 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    // TODO: Enum de cores
-    // TODO: Dark mode
+    // TODO: Create LaunchScreen
     // TODO: Enum de strings
     // TODO: Multiplos idiomas
     // TODO: fix alerts messages
@@ -119,8 +118,15 @@ class HomeViewController: UIViewController {
         }
         endWorkTimeDatePickerLastValue = endWorkTimeDatePicker.date
     }
-    
+//    var isDark = false
     @IBAction func calculateTotalWorkTime(_ sender: Any) {
+//        if isDark {
+//            UserDefaults.standard.setValue(Theme.dark.rawValue, forKey: "theme")
+//        } else {
+//            UserDefaults.standard.setValue(Theme.light.rawValue, forKey: "theme")
+//        }
+//        isDark = !isDark
+        
         let startWork = startWorkDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeStart = lunchTimeStartDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeEnd = lunchTimeEndDatePicker.date.timeIntervalSinceReferenceDate
