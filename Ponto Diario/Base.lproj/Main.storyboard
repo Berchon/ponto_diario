@@ -3,8 +3,9 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +35,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-k9-StM">
                                                                         <rect key="frame" x="0.0" y="0.0" width="234" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT">
@@ -54,7 +55,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-6K-K5X">
                                                                         <rect key="frame" x="0.0" y="0.0" width="234" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB">
@@ -74,7 +75,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de retorno do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-pO-aad">
                                                                         <rect key="frame" x="0.0" y="0.0" width="232" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q">
@@ -97,7 +98,8 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Calcular" cornerStyle="capsule">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <color key="baseBackgroundColor" red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="baseForegroundColor" name="buttonLabel"/>
+                                                                    <color key="baseBackgroundColor" name="buttonBackground"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="calculateTotalWorkTime:" destination="mIM-VX-yTI" eventType="touchUpInside" id="obU-PB-ZtA"/>
@@ -109,7 +111,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-7z-erh">
                                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ">
@@ -124,7 +126,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" name="cardBackground"/>
                                                         <constraints>
                                                             <constraint firstItem="dtd-K0-X1N" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="FOK-vu-pUO"/>
                                                             <constraint firstItem="SuR-DI-kUd" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="Idz-M6-2eh"/>
@@ -151,13 +153,13 @@
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Horas Trabalhadas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agX-gC-IIt">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="169" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" name="cardLabelPrimary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-wP-hC4">
                                                                                 <rect key="frame" x="185" y="0.0" width="144" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" name="cardLabelPrimary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
@@ -168,13 +170,13 @@
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Horas Trabalhadas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyT-Rn-iEA">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="169" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" name="cardLabelPrimary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSF-IF-L0A">
                                                                                 <rect key="frame" x="185" y="0.0" width="144" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" name="cardLabelPrimary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
@@ -182,7 +184,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" name="cardBackground"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="gP9-eL-3hF" secondAttribute="trailing" constant="16" id="9zg-zg-zsb"/>
                                                             <constraint firstItem="gP9-eL-3hF" firstAttribute="top" secondItem="5lr-ei-4u0" secondAttribute="top" constant="16" id="G8N-M6-gHv"/>
@@ -223,7 +225,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BVV-ac-NeV"/>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="appBackground"/>
                         <constraints>
                             <constraint firstItem="pTB-sr-ETf" firstAttribute="top" secondItem="BVV-ac-NeV" secondAttribute="top" id="Qka-9B-qA2"/>
                             <constraint firstItem="pTB-sr-ETf" firstAttribute="leading" secondItem="BVV-ac-NeV" secondAttribute="leading" id="SI5-9F-Gjb"/>
@@ -234,6 +236,7 @@
                     <navigationItem key="navigationItem" title="Ponto Diário" id="Bhv-LK-R7N">
                         <barButtonItem key="backBarButtonItem" title=" " id="Scg-Cf-cm1"/>
                         <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="Hpa-Ij-81a">
+                            <color key="tintColor" name="navigationLabel"/>
                             <connections>
                                 <segue destination="mxi-AR-kaO" kind="show" id="2JP-yM-X9v"/>
                             </connections>
@@ -273,7 +276,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga horária diária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-b3-H2S">
                                                         <rect key="frame" x="16" y="15.999999999999998" width="329" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj">
@@ -285,7 +288,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de entrada no trabalho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSg-Q2-DHa">
                                                         <rect key="frame" x="16" y="93.666666666666657" width="329" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a">
@@ -297,7 +300,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-09-f1F">
                                                         <rect key="frame" x="16" y="171.33333333333331" width="329" height="19.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci">
@@ -309,7 +312,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de intervalo do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-hl-cHy">
                                                         <rect key="frame" x="16" y="249.00000000000003" width="329" height="19.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="cardLabelSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO">
@@ -327,14 +330,15 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Salvar" cornerStyle="capsule">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                            <color key="baseBackgroundColor" red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="baseForegroundColor" name="buttonLabel"/>
+                                                            <color key="baseBackgroundColor" name="buttonBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="saveData:" destination="mxi-AR-kaO" eventType="touchUpInside" id="mbH-gg-mUQ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="cardBackground"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="n2Q-kY-qci" secondAttribute="trailing" constant="16" id="1Ps-ZW-7rj"/>
                                                     <constraint firstAttribute="trailing" secondItem="Z09-b3-H2S" secondAttribute="trailing" constant="16" id="233-P1-EKy"/>
@@ -386,7 +390,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2YF-5L-Mlb"/>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="appBackground"/>
                         <constraints>
                             <constraint firstItem="yXE-ij-lt7" firstAttribute="top" secondItem="2YF-5L-Mlb" secondAttribute="top" id="WaM-u5-rvx"/>
                             <constraint firstItem="yXE-ij-lt7" firstAttribute="leading" secondItem="2YF-5L-Mlb" secondAttribute="leading" id="eHT-oC-hG1"/>
@@ -394,12 +398,30 @@
                             <constraint firstItem="2YF-5L-Mlb" firstAttribute="trailing" secondItem="yXE-ij-lt7" secondAttribute="trailing" id="tv0-Et-6Qn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Configurações" id="v98-1g-Yhf"/>
+                    <navigationItem key="navigationItem" title="Configurações" id="v98-1g-Yhf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="SVr-6k-RIc">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" id="1Iv-nG-tFr">
+                                <rect key="frame" x="298.66666666666669" y="5.6666666666666679" width="78.333333333333314" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="" image="sun.max.fill" catalog="system"/>
+                                    <segment title="">
+                                        <imageReference key="image" image="moon.fill" catalog="system" renderingMode="original" variableValue="0.0"/>
+                                    </segment>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="changeTheme"/>
+                                <connections>
+                                    <action selector="changeTheme:" destination="mxi-AR-kaO" eventType="valueChanged" id="gGM-Km-zCS"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lunchBreakDurationDatePicker" destination="33E-Su-maO" id="4oF-M0-b5j"/>
                         <outlet property="lunchBreakTimeDatePicker" destination="n2Q-kY-qci" id="L90-dn-u9Q"/>
                         <outlet property="requiredDailyHoursDatePicker" destination="Ocr-Tf-apj" id="SSA-0G-b0R"/>
                         <outlet property="startWorkDatePicker" destination="oeZ-Lu-r4a" id="OcP-LE-Gaf"/>
+                        <outlet property="themeSegmentedControl" destination="1Iv-nG-tFr" id="5Vh-Ih-HX3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="col-dX-pFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -411,18 +433,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PbC-Ql-wZt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Dcp-bp-QLM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dcp-bp-QLM">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="navigationBackground"/>
+                        <color key="tintColor" name="navigationLabel"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -440,8 +460,34 @@
     </scenes>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="123"/>
-        <systemColor name="systemBackgroundColor">
+        <image name="moon.fill" catalog="system" width="128" height="123"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
+        <namedColor name="appBackground">
+            <color red="0.10999999195337296" green="0.10999999195337296" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonBackground">
+            <color red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="buttonLabel">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        </namedColor>
+        <namedColor name="cardBackground">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="cardLabelPrimary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cardLabelSecondary">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="changeTheme">
+            <color red="0.95759624239999996" green="0.73747825619999996" blue="0.25674229859999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="navigationBackground">
+            <color red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navigationLabel">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
     </resources>
 </document>

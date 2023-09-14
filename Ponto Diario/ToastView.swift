@@ -73,7 +73,6 @@ class ToastView: UIView {
         let delayToRemoveToast = 5.0
         let animationDuration = 0.3
         UIView.animate(withDuration: animationDuration) {
-            print(window.frame.width, self.frame.width)
             self.frame.origin.x = 16
             self.alpha = 1.0
         } completion: { _ in
