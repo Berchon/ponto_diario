@@ -22,3 +22,12 @@ enum Theme: String {
         }
     }
 }
+
+func getCurrentTheme() -> Theme {
+    if let themeRawValue = UserDefaults.standard.string(forKey: "theme"),
+       let theme = Theme(rawValue: themeRawValue) {
+        return theme
+    } else {
+        return .system
+    }
+}

@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -397,12 +398,30 @@
                             <constraint firstItem="2YF-5L-Mlb" firstAttribute="trailing" secondItem="yXE-ij-lt7" secondAttribute="trailing" id="tv0-Et-6Qn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Configurações" id="v98-1g-Yhf"/>
+                    <navigationItem key="navigationItem" title="Configurações" id="v98-1g-Yhf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="SVr-6k-RIc">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" id="1Iv-nG-tFr">
+                                <rect key="frame" x="298.66666666666669" y="5.6666666666666679" width="78.333333333333314" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="" image="sun.max.fill" catalog="system"/>
+                                    <segment title="">
+                                        <imageReference key="image" image="moon.fill" catalog="system" renderingMode="original" variableValue="0.0"/>
+                                    </segment>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="changeTheme"/>
+                                <connections>
+                                    <action selector="changeTheme:" destination="mxi-AR-kaO" eventType="valueChanged" id="gGM-Km-zCS"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lunchBreakDurationDatePicker" destination="33E-Su-maO" id="4oF-M0-b5j"/>
                         <outlet property="lunchBreakTimeDatePicker" destination="n2Q-kY-qci" id="L90-dn-u9Q"/>
                         <outlet property="requiredDailyHoursDatePicker" destination="Ocr-Tf-apj" id="SSA-0G-b0R"/>
                         <outlet property="startWorkDatePicker" destination="oeZ-Lu-r4a" id="OcP-LE-Gaf"/>
+                        <outlet property="themeSegmentedControl" destination="1Iv-nG-tFr" id="5Vh-Ih-HX3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="col-dX-pFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -441,6 +460,8 @@
     </scenes>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="moon.fill" catalog="system" width="128" height="123"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
         <namedColor name="appBackground">
             <color red="0.10999999195337296" green="0.10999999195337296" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -458,6 +479,9 @@
         </namedColor>
         <namedColor name="cardLabelSecondary">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="changeTheme">
+            <color red="0.95759624239999996" green="0.73747825619999996" blue="0.25674229859999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="navigationBackground">
             <color red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

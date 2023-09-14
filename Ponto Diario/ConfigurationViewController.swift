@@ -26,6 +26,7 @@ class ConfigurationViewController: UIViewController {
     @IBOutlet weak var startWorkDatePicker: UIDatePicker!
     @IBOutlet weak var lunchBreakTimeDatePicker: UIDatePicker!
     @IBOutlet weak var lunchBreakDurationDatePicker: UIDatePicker!
+    @IBOutlet weak var themeSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +35,7 @@ class ConfigurationViewController: UIViewController {
         lunchBreakTimeDatePicker.contentHorizontalAlignment = .left
         lunchBreakDurationDatePicker.contentHorizontalAlignment = .left
         updateDatePickers()
-    }
-    
-    func updateDatePickers() {
-        requiredDailyHoursDatePicker.date = helper.todayDate(with: configuration.requiredDailyHours)
-        startWorkDatePicker.date = helper.todayDate(with: configuration.startWork)
-        lunchBreakTimeDatePicker.date = helper.todayDate(with: configuration.lunchBreakTime)
-        lunchBreakDurationDatePicker.date = helper.todayDate(with: configuration.lunchBreakDuration)
+        updateSegmentedControlSelection()
     }
     
     @IBAction func saveData(_ sender: Any) {
@@ -61,6 +56,50 @@ class ConfigurationViewController: UIViewController {
             let toastView = ToastView.loadFromNib(style: .failed)
             toastView.setMessage(error.localizedDescription)
             toastView.show()
+        }
+    }
+    
+    @IBAction func changeTheme(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            setTheme(for: .light)
+        case 1:
+            setTheme(for: .dark)
+        default:
+            setTheme(for: .system)
+        }
+    }
+    
+    func updateDatePickers() {
+        requiredDailyHoursDatePicker.date = helper.todayDate(with: configuration.requiredDailyHours)
+        startWorkDatePicker.date = helper.todayDate(with: configuration.startWork)
+        lunchBreakTimeDatePicker.date = helper.todayDate(with: configuration.lunchBreakTime)
+        lunchBreakDurationDatePicker.date = helper.todayDate(with: configuration.lunchBreakDuration)
+    }
+    
+    func setTheme(for theme: Theme) {
+        UserDefaults.standard.set(theme.rawValue, forKey: "theme")
+        UserDefaults.standard.setValue(theme.rawValue, forKey: "theme")
+        switch theme {
+        case .light:
+            overrideUserInterfaceStyle = .light
+        case .dark:
+            overrideUserInterfaceStyle = .dark
+        case .system:
+            overrideUserInterfaceStyle = .unspecified
+        }
+    }
+    
+    func updateSegmentedControlSelection() {
+        let currentTheme = getCurrentTheme()
+        
+        switch currentTheme {
+        case .light:
+            themeSegmentedControl.selectedSegmentIndex = 0
+        case .dark:
+            themeSegmentedControl.selectedSegmentIndex = 1
+        case .system:
+            themeSegmentedControl.selectedSegmentIndex = UISegmentedControl.noSegment
         }
     }
 }
