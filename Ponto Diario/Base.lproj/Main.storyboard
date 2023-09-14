@@ -29,64 +29,89 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3G-rG-Ntp" userLabel="Card_Setting" customClass="CardView" customModule="Ponto_Diario" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="16" width="361" height="439.33333333333331"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SuR-DI-kUd">
-                                                                <rect key="frame" x="16" y="16" width="234" height="69.333333333333329"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WEH-p5-KqJ">
+                                                                <rect key="frame" x="16" y="16" width="329" height="325.33333333333331"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-k9-StM">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="234" height="19.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT">
-                                                                        <rect key="frame" x="0.0" y="19.333333333333343" width="234" height="50"/>
-                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.98492002">
-                                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                                        </date>
-                                                                        <connections>
-                                                                            <action selector="startWorkValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="yr9-1f-RCc"/>
-                                                                        </connections>
-                                                                    </datePicker>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dtd-K0-X1N">
-                                                                <rect key="frame" x="16" y="101.33333333333334" width="234" height="69.333333333333343"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-6K-K5X">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="234" height="19.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB">
-                                                                        <rect key="frame" x="0.0" y="19.333333333333314" width="234" height="50"/>
-                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.98539305">
-                                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                                        </date>
-                                                                        <connections>
-                                                                            <action selector="lunchTimeStartValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="22D-Gs-f6e"/>
-                                                                        </connections>
-                                                                    </datePicker>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uxs-8x-NOY">
-                                                                <rect key="frame" x="16" y="186.66666666666669" width="232" height="69.333333333333314"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de retorno do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-pO-aad">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="232" height="19.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q">
-                                                                        <rect key="frame" x="0.0" y="19.333333333333314" width="232" height="50"/>
-                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.98580301">
-                                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                                        </date>
-                                                                        <connections>
-                                                                            <action selector="lunchTimeEndValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="EMQ-Zc-YCv"/>
-                                                                        </connections>
-                                                                    </datePicker>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SuR-DI-kUd">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="69.333333333333329"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-k9-StM">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" name="cardLabelSecondary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT">
+                                                                                <rect key="frame" x="0.0" y="19.333333333333343" width="329" height="50"/>
+                                                                                <date key="date" timeIntervalSinceReferenceDate="715575074.98492002">
+                                                                                    <!--2023-09-05 02:51:14 +0000-->
+                                                                                </date>
+                                                                                <connections>
+                                                                                    <action selector="startWorkValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="yr9-1f-RCc"/>
+                                                                                </connections>
+                                                                            </datePicker>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dtd-K0-X1N">
+                                                                        <rect key="frame" x="0.0" y="85.333333333333343" width="329" height="69.333333333333343"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-6K-K5X">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" name="cardLabelSecondary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB">
+                                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
+                                                                                <date key="date" timeIntervalSinceReferenceDate="715575074.98539305">
+                                                                                    <!--2023-09-05 02:51:14 +0000-->
+                                                                                </date>
+                                                                                <connections>
+                                                                                    <action selector="lunchTimeStartValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="22D-Gs-f6e"/>
+                                                                                </connections>
+                                                                            </datePicker>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uxs-8x-NOY">
+                                                                        <rect key="frame" x="0.0" y="170.66666666666669" width="329" height="69.333333333333314"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de retorno do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-pO-aad">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" name="cardLabelSecondary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q">
+                                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
+                                                                                <date key="date" timeIntervalSinceReferenceDate="715575074.98580301">
+                                                                                    <!--2023-09-05 02:51:14 +0000-->
+                                                                                </date>
+                                                                                <connections>
+                                                                                    <action selector="lunchTimeEndValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="EMQ-Zc-YCv"/>
+                                                                                </connections>
+                                                                            </datePicker>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pS4-XK-A8O">
+                                                                        <rect key="frame" x="0.0" y="256" width="329" height="69.333333333333314"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-7z-erh">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" name="cardLabelSecondary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ">
+                                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
+                                                                                <date key="date" timeIntervalSinceReferenceDate="715575074.98619294">
+                                                                                    <!--2023-09-05 02:51:14 +0000-->
+                                                                                </date>
+                                                                                <connections>
+                                                                                    <action selector="endWorkValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="oSg-bF-ajw"/>
+                                                                                </connections>
+                                                                            </datePicker>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-Ii-zgy">
@@ -105,40 +130,15 @@
                                                                     <action selector="calculateTotalWorkTime:" destination="mIM-VX-yTI" eventType="touchUpInside" id="obU-PB-ZtA"/>
                                                                 </connections>
                                                             </button>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pS4-XK-A8O">
-                                                                <rect key="frame" x="16" y="272" width="240" height="69.333333333333314"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-7z-erh">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="19.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ">
-                                                                        <rect key="frame" x="0.0" y="19.333333333333314" width="240" height="50"/>
-                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.98619294">
-                                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                                        </date>
-                                                                        <connections>
-                                                                            <action selector="endWorkValueChanged:" destination="mIM-VX-yTI" eventType="valueChanged" id="oSg-bF-ajw"/>
-                                                                        </connections>
-                                                                    </datePicker>
-                                                                </subviews>
-                                                            </stackView>
                                                         </subviews>
                                                         <color key="backgroundColor" name="cardBackground"/>
                                                         <constraints>
-                                                            <constraint firstItem="dtd-K0-X1N" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="FOK-vu-pUO"/>
-                                                            <constraint firstItem="SuR-DI-kUd" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="Idz-M6-2eh"/>
-                                                            <constraint firstItem="oBc-Ii-zgy" firstAttribute="top" secondItem="pS4-XK-A8O" secondAttribute="bottom" constant="32" id="QYL-ou-uHd"/>
-                                                            <constraint firstItem="dtd-K0-X1N" firstAttribute="top" secondItem="SuR-DI-kUd" secondAttribute="bottom" constant="16" id="bTh-Ge-RYJ"/>
-                                                            <constraint firstAttribute="bottom" secondItem="oBc-Ii-zgy" secondAttribute="bottom" constant="16" id="eI3-I1-82p"/>
-                                                            <constraint firstItem="Uxs-8x-NOY" firstAttribute="top" secondItem="dtd-K0-X1N" secondAttribute="bottom" constant="16" id="jV6-me-2z6"/>
-                                                            <constraint firstItem="Uxs-8x-NOY" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="kYh-yZ-Wn1"/>
-                                                            <constraint firstItem="pS4-XK-A8O" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="knb-ct-ehM"/>
-                                                            <constraint firstItem="SuR-DI-kUd" firstAttribute="top" secondItem="t3G-rG-Ntp" secondAttribute="top" constant="16" id="tWr-nA-ENH"/>
+                                                            <constraint firstItem="oBc-Ii-zgy" firstAttribute="top" secondItem="WEH-p5-KqJ" secondAttribute="bottom" constant="32" id="6Yb-cQ-zw3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WEH-p5-KqJ" secondAttribute="trailing" constant="16" id="9Lq-Bd-nNc"/>
+                                                            <constraint firstItem="WEH-p5-KqJ" firstAttribute="leading" secondItem="t3G-rG-Ntp" secondAttribute="leading" constant="16" id="J1Y-go-r4N"/>
+                                                            <constraint firstItem="WEH-p5-KqJ" firstAttribute="top" secondItem="t3G-rG-Ntp" secondAttribute="top" constant="16" id="TXi-6u-BrK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oBc-Ii-zgy" secondAttribute="bottom" constant="16" id="u0e-4B-wRL"/>
                                                             <constraint firstItem="oBc-Ii-zgy" firstAttribute="centerX" secondItem="t3G-rG-Ntp" secondAttribute="centerX" id="uOJ-a6-6eD"/>
-                                                            <constraint firstItem="pS4-XK-A8O" firstAttribute="top" secondItem="Uxs-8x-NOY" secondAttribute="bottom" constant="16" id="xqV-uC-nUc"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lr-ei-4u0" userLabel="Card_Results" customClass="CardView" customModule="Ponto_Diario" customModuleProvider="target">
@@ -271,58 +271,83 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfw-UE-x5Y" userLabel="Card_Configuration" customClass="CardView" customModule="Ponto_Diario" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="16" width="361" height="408.66666666666669"/>
+                                                <rect key="frame" x="16" y="16" width="361" height="439.33333333333331"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga horária diária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-b3-H2S">
-                                                        <rect key="frame" x="16" y="15.999999999999998" width="329" height="19.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj">
-                                                        <rect key="frame" x="16" y="43.333333333333343" width="329" height="34.333333333333343"/>
-                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99074197">
-                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                        </date>
-                                                    </datePicker>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de entrada no trabalho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSg-Q2-DHa">
-                                                        <rect key="frame" x="16" y="93.666666666666657" width="329" height="19.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a">
-                                                        <rect key="frame" x="16" y="120.99999999999999" width="329" height="34.333333333333329"/>
-                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99115098">
-                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                        </date>
-                                                    </datePicker>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-09-f1F">
-                                                        <rect key="frame" x="16" y="171.33333333333331" width="329" height="19.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci">
-                                                        <rect key="frame" x="16" y="198.66666666666669" width="329" height="34.333333333333343"/>
-                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99151695">
-                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                        </date>
-                                                    </datePicker>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de intervalo do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-hl-cHy">
-                                                        <rect key="frame" x="16" y="249.00000000000003" width="329" height="19.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" name="cardLabelSecondary"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO">
-                                                        <rect key="frame" x="16" y="276.33333333333331" width="329" height="34.333333333333314"/>
-                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99189103">
-                                                            <!--2023-09-05 02:51:14 +0000-->
-                                                        </date>
-                                                    </datePicker>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iL5-57-dtr">
+                                                        <rect key="frame" x="16" y="16" width="329" height="325.33333333333331"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LkX-Ai-VAE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="329" height="69.333333333333329"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga horária diária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-b3-H2S">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj">
+                                                                        <rect key="frame" x="0.0" y="19.333333333333343" width="329" height="50"/>
+                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99074197">
+                                                                            <!--2023-09-05 02:51:14 +0000-->
+                                                                        </date>
+                                                                    </datePicker>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LM4-Xv-8IN">
+                                                                <rect key="frame" x="0.0" y="85.333333333333343" width="329" height="69.333333333333343"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de entrada no trabalho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSg-Q2-DHa">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a">
+                                                                        <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
+                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99115098">
+                                                                            <!--2023-09-05 02:51:14 +0000-->
+                                                                        </date>
+                                                                    </datePicker>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-BK-84b">
+                                                                <rect key="frame" x="0.0" y="170.66666666666669" width="329" height="69.333333333333314"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-09-f1F">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci">
+                                                                        <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
+                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99151695">
+                                                                            <!--2023-09-05 02:51:14 +0000-->
+                                                                        </date>
+                                                                    </datePicker>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="toU-oD-HP7">
+                                                                <rect key="frame" x="0.0" y="256" width="329" height="69.333333333333314"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de intervalo do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-hl-cHy">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <color key="textColor" name="cardLabelSecondary"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO">
+                                                                        <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
+                                                                        <date key="date" timeIntervalSinceReferenceDate="715575074.99189103">
+                                                                            <!--2023-09-05 02:51:14 +0000-->
+                                                                        </date>
+                                                                    </datePicker>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-SG-QyF">
-                                                        <rect key="frame" x="55.666666666666686" y="342.66666666666669" width="250" height="50"/>
+                                                        <rect key="frame" x="55.666666666666686" y="373.33333333333331" width="250" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="blg-NB-bC4"/>
                                                             <constraint firstAttribute="height" constant="50" id="etZ-bE-AYd"/>
@@ -340,33 +365,12 @@
                                                 </subviews>
                                                 <color key="backgroundColor" name="cardBackground"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="n2Q-kY-qci" secondAttribute="trailing" constant="16" id="1Ps-ZW-7rj"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Z09-b3-H2S" secondAttribute="trailing" constant="16" id="233-P1-EKy"/>
-                                                    <constraint firstItem="Ocr-Tf-apj" firstAttribute="top" secondItem="Z09-b3-H2S" secondAttribute="bottom" constant="8" id="37A-9v-vuB"/>
-                                                    <constraint firstItem="eNf-09-f1F" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="3Ls-5r-HRt"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Ocr-Tf-apj" secondAttribute="trailing" constant="16" id="3ae-CC-hzi"/>
-                                                    <constraint firstAttribute="trailing" secondItem="xmb-hl-cHy" secondAttribute="trailing" constant="16" id="3yJ-vg-97L"/>
-                                                    <constraint firstItem="Ocr-Tf-apj" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="5KI-TF-wuE"/>
-                                                    <constraint firstItem="oeZ-Lu-r4a" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="9vb-m3-RGU"/>
-                                                    <constraint firstAttribute="trailing" secondItem="eNf-09-f1F" secondAttribute="trailing" constant="16" id="C2e-eO-ux6"/>
-                                                    <constraint firstItem="33E-Su-maO" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="Eei-RZ-Xcg"/>
-                                                    <constraint firstItem="oeZ-Lu-r4a" firstAttribute="top" secondItem="LSg-Q2-DHa" secondAttribute="bottom" constant="8" id="MCg-HH-6hB"/>
-                                                    <constraint firstItem="33E-Su-maO" firstAttribute="top" secondItem="xmb-hl-cHy" secondAttribute="bottom" constant="8" id="RUa-uO-hSS"/>
-                                                    <constraint firstItem="Z09-b3-H2S" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="Skw-3J-51J"/>
-                                                    <constraint firstItem="xmb-hl-cHy" firstAttribute="top" secondItem="n2Q-kY-qci" secondAttribute="bottom" constant="16" id="afX-ph-Nr8"/>
-                                                    <constraint firstItem="LSg-Q2-DHa" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="bBP-Nv-pt5"/>
-                                                    <constraint firstItem="n2Q-kY-qci" firstAttribute="top" secondItem="eNf-09-f1F" secondAttribute="bottom" constant="8" id="bYU-4v-H5k"/>
-                                                    <constraint firstItem="Z09-b3-H2S" firstAttribute="top" secondItem="dfw-UE-x5Y" secondAttribute="top" constant="16" id="btI-jX-2yV"/>
-                                                    <constraint firstItem="eNf-09-f1F" firstAttribute="top" secondItem="oeZ-Lu-r4a" secondAttribute="bottom" constant="16" id="gEW-mn-p8v"/>
-                                                    <constraint firstAttribute="trailing" secondItem="oeZ-Lu-r4a" secondAttribute="trailing" constant="16" id="hWr-Ob-os5"/>
-                                                    <constraint firstAttribute="trailing" secondItem="LSg-Q2-DHa" secondAttribute="trailing" constant="16" id="hxY-7l-FFX"/>
-                                                    <constraint firstAttribute="trailing" secondItem="33E-Su-maO" secondAttribute="trailing" constant="16" id="ib7-9G-3Lc"/>
+                                                    <constraint firstItem="iL5-57-dtr" firstAttribute="top" secondItem="dfw-UE-x5Y" secondAttribute="top" constant="16" id="ALE-y6-A3k"/>
+                                                    <constraint firstItem="iL5-57-dtr" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="fH6-rw-1Qw"/>
                                                     <constraint firstItem="AJ0-SG-QyF" firstAttribute="centerX" secondItem="dfw-UE-x5Y" secondAttribute="centerX" id="kgp-nP-23R"/>
-                                                    <constraint firstItem="AJ0-SG-QyF" firstAttribute="top" secondItem="33E-Su-maO" secondAttribute="bottom" constant="32" id="mkF-Xh-vv3"/>
-                                                    <constraint firstItem="LSg-Q2-DHa" firstAttribute="top" secondItem="Ocr-Tf-apj" secondAttribute="bottom" constant="16" id="nRY-K4-XJ6"/>
+                                                    <constraint firstItem="AJ0-SG-QyF" firstAttribute="top" secondItem="iL5-57-dtr" secondAttribute="bottom" constant="32" id="nd1-Wc-Oeo"/>
                                                     <constraint firstAttribute="bottom" secondItem="AJ0-SG-QyF" secondAttribute="bottom" constant="16" id="xHN-sa-A8R"/>
-                                                    <constraint firstItem="n2Q-kY-qci" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="xdM-TF-0vk"/>
-                                                    <constraint firstItem="xmb-hl-cHy" firstAttribute="leading" secondItem="dfw-UE-x5Y" secondAttribute="leading" constant="16" id="ydd-Ry-SqR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iL5-57-dtr" secondAttribute="trailing" constant="16" id="yV6-A2-Enu"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -481,10 +485,10 @@
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="changeTheme">
-            <color red="0.95759624239999996" green="0.73747825619999996" blue="0.25674229859999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.95686274509803926" green="0.73725490196078436" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="navigationBackground">
-            <color red="0.0" green="0.61960784313725492" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.62000000476837158" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationLabel">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
