@@ -24,13 +24,13 @@ class Helper {
             UserDefaults.standard.set(data, forKey: "configuration")
             return .success(())
         } catch {
-            return .failure(.missingData(message: "Erro ao salvar as com figurações."))
+            return .failure(.missingData(message: "Erro ao salvar as configurações."))
         }
     }
     
     func loadData() -> Result<ConfigurationModel, CustomError> {
         guard let data = UserDefaults.standard.data(forKey: "configuration") else {
-            return .failure(.missingData(message: "Não foram encontradas configurações salvas."))
+            return .failure(.missingData(message: "Configurações não encontradas."))
         }
         let decoder = JSONDecoder()
         do {

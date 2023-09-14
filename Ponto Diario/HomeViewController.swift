@@ -9,7 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    // TODO: Message Snackbar
+    // TODO: Enum de cores
+    // TODO: Dark mode
+    // TODO: Enum de strings
+    // TODO: Multiplos idiomas
     // TODO: fix alerts messages
     
     // MARK: Properties
@@ -54,7 +57,10 @@ class HomeViewController: UIViewController {
         
         if lunchTimeStart < startWork {
             startWorkDatePicker.date = startWorkDatePickerLastValue
-            print("O horário de entrada no trabalho não pode ser maior que o horário de saída para o almoço!")
+            
+            let toastView = ToastView.loadFromNib(style: .alert)
+            toastView.setMessage("Deve ser menor que o horário de saída para o almoço.")
+            toastView.show()
             return
         }
         
@@ -67,7 +73,10 @@ class HomeViewController: UIViewController {
         
         if lunchTimeStart < startWork {
             lunchTimeStartDatePicker.date = lunchTimeStartDatePickerLastValue
-            print("O horário de saída para o almoço não pode ser menor que o horário entrada no trabalho!")
+            
+            let toastView = ToastView.loadFromNib(style: .alert)
+            toastView.setMessage("Deve ser maior que o horário de entrada no trabalho.")
+            toastView.show()
             return
         }
         
@@ -81,7 +90,10 @@ class HomeViewController: UIViewController {
         
         if lunchTimeEnd < lunchTimeStart {
             lunchTimeEndDatePicker.date = lunchTimeEndDatePickerLastValue
-            print("O horário de retorno do almoço não pode ser menor que o horário de saída para o almoço!")
+            
+            let toastView = ToastView.loadFromNib(style: .alert)
+            toastView.setMessage("Deve ser maior que o horário de saída para o almoço.")
+            toastView.show()
             return
         }
         let lunchDuration = lunchTimeEnd - lunchTimeStart
@@ -99,19 +111,16 @@ class HomeViewController: UIViewController {
         let endWork = endWorkTimeDatePicker.date.timeIntervalSinceReferenceDate
         if endWork < lunchTimeEnd {
             endWorkTimeDatePicker.date = endWorkTimeDatePickerLastValue
-            print("O horário de saída não pode ser menor que o horário de retorno do almoço!")
+            
+            let toastView = ToastView.loadFromNib(style: .alert)
+            toastView.setMessage("Deve ser maior que o horário de retorno do almoço.")
+            toastView.show()
             return
         }
         endWorkTimeDatePickerLastValue = endWorkTimeDatePicker.date
     }
     
     @IBAction func calculateTotalWorkTime(_ sender: Any) {
-        
-        let toastView = ToastView.loadFromNib(style: .neutral)
-        toastView.setMessage("Deu certo o toast bar. Configuradinho muito bem!")
-        toastView.show()
-        
-        
         let startWork = startWorkDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeStart = lunchTimeStartDatePicker.date.timeIntervalSinceReferenceDate
         let lunchTimeEnd = lunchTimeEndDatePicker.date.timeIntervalSinceReferenceDate
@@ -131,7 +140,6 @@ class HomeViewController: UIViewController {
         let text = overtime > 0 ? "Horas extras:" : "Horas não trabalhadas:"
         overtimeDurationTextLabel.text = text
         overtimeDurationValueLabel.text = helper.timeIntervalToHHmm(using: abs(overtime))
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -184,8 +192,9 @@ class HomeViewController: UIViewController {
         case .success(let loadedConfiguration):
             configuration = loadedConfiguration
         case .failure(let error):
-            print("\(error.localizedDescription) Usando a configuração padrão")
-            print("\(error.errorDescription ?? "") Usando a configuração padrão")
+            let toastView = ToastView.loadFromNib(style: .neutral)
+            toastView.setMessage("\(error.localizedDescription) Usando a padrão.")
+            toastView.show()
         }
     }
 }

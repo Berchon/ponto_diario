@@ -54,12 +54,13 @@ class ConfigurationViewController: UIViewController {
         case .success:
             delegate?.updateDataSource(with: configuration)
             
-            print("Dados atualizados com sucesso")
+            let toastView = ToastView.loadFromNib(style: .success)
+            toastView.setMessage("Dados atualizados com sucesso")
+            toastView.show()
         case .failure(let error):
-            print(error.localizedDescription)
-            print(error.errorDescription ?? "")
+            let toastView = ToastView.loadFromNib(style: .failed)
+            toastView.setMessage(error.localizedDescription)
+            toastView.show()
         }
-        
-        
     }
 }
