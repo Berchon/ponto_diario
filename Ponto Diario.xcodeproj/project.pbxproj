@@ -16,6 +16,7 @@
 		766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766781DC2AA42C6D00D2A156 /* Helper.swift */; };
 		766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866112AA11EA7006310C5 /* ConfigurationViewController.swift */; };
 		766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */; };
+		767D759F2AB3E7C30013E821 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D759E2AB3E7C30013E821 /* LaunchScreenViewController.swift */; };
 		768C31502AAE4391000EA015 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C314F2AAE4391000EA015 /* CardView.swift */; };
 		76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76910A5A2AAB751F0085868D /* CustomDatePicker.swift */; };
 		76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		766781DC2AA42C6D00D2A156 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		766866112AA11EA7006310C5 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
+		767D759E2AB3E7C30013E821 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		768C314F2AAE4391000EA015 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		76910A5A2AAB751F0085868D /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		76CF95282A9FB7B200BD5358 /* Ponto Diario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ponto Diario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				760435362AB2446F008E3FA4 /* ToastView.xib */,
 				760435382AB24B9A008E3FA4 /* ToastView.swift */,
 				7604353A2AB29AB8008E3FA4 /* Theme.swift */,
+				767D759E2AB3E7C30013E821 /* LaunchScreenViewController.swift */,
 			);
 			path = "Ponto Diario";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */,
 				760435392AB24B9A008E3FA4 /* ToastView.swift in Sources */,
 				76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */,
+				767D759F2AB3E7C30013E821 /* LaunchScreenViewController.swift in Sources */,
 				765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */,
 				765FF3F82AB10F8800A6EA05 /* CustomError.swift in Sources */,
 				7604353B2AB29AB8008E3FA4 /* Theme.swift in Sources */,
