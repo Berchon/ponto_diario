@@ -57,7 +57,9 @@ class HomeViewController: UIViewController {
             startWorkDatePicker.date = startWorkDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            toastView.setMessage("Deve ser menor que o horário de saída para o almoço.")
+            let message = NSLocalizedString("Deve ser menor que o horário de saída para o almoço.", comment: "Localizable")
+            toastView.setMessage(message)
+//            toastView.setMessage("Deve ser menor que o horário de saída para o almoço.")
             toastView.show()
             return
         }

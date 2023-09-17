@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Ponto Diario
+
+  Created by Luciano Da Silva Berchon on 16/09/23.
+  
+*/
+
+// MARK: MAIN - Home
+"Ponto Diário" = "(pt-br)Ponto Diário";
+"Horário de entrada" = "(pt-br)Horário de entrada";
+"Horário de saída para o almoço" = "(pt-br)Horário de saída para o almoço";
+"Horário de retorno do almoço" = "(pt-br)Horário de retorno do almoço";
+"Horário de saída" = "(pt-br)Horário de saída";
+"Calcular" = "(pt-br)Calcular";
+"Horas Trabalhadas:" = "(pt-br)Horas Trabalhadas:";
+
+// MARK: MAIN - Configuration
+
+// MARK: HomeViewController
+
+// MARK: ConfigurationViewController
+
+// MARK: Helper
+

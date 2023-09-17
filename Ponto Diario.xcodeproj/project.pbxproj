@@ -11,12 +11,16 @@
 		760435372AB2446F008E3FA4 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760435362AB2446F008E3FA4 /* ToastView.xib */; };
 		760435392AB24B9A008E3FA4 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760435382AB24B9A008E3FA4 /* ToastView.swift */; };
 		7604353B2AB29AB8008E3FA4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604353A2AB29AB8008E3FA4 /* Theme.swift */; };
+		76228E742AB677120000EB9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76228E762AB677120000EB9D /* Localizable.strings */; };
+		76228E822AB6839E0000EB9D /* AccessibilityLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76228E842AB6839E0000EB9D /* AccessibilityLocalizable.strings */; };
+		76228E8F2AB68E820000EB9D /* LocalizableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76228E8D2AB68E820000EB9D /* LocalizableLabel.swift */; };
+		76228E902AB68E820000EB9D /* LocalizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76228E8E2AB68E820000EB9D /* LocalizableButton.swift */; };
+		762FF6732AB78F6B00073372 /* LocalizableNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762FF6722AB78F6B00073372 /* LocalizableNavigationItem.swift */; };
 		765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */; };
 		765FF3F82AB10F8800A6EA05 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FF3F72AB10F8800A6EA05 /* CustomError.swift */; };
 		766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766781DC2AA42C6D00D2A156 /* Helper.swift */; };
 		766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866112AA11EA7006310C5 /* ConfigurationViewController.swift */; };
 		766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */; };
-		767D759F2AB3E7C30013E821 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D759E2AB3E7C30013E821 /* LaunchScreenViewController.swift */; };
 		768C31502AAE4391000EA015 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C314F2AAE4391000EA015 /* CardView.swift */; };
 		76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76910A5A2AAB751F0085868D /* CustomDatePicker.swift */; };
 		76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */; };
@@ -32,12 +36,18 @@
 		760435362AB2446F008E3FA4 /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
 		760435382AB24B9A008E3FA4 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		7604353A2AB29AB8008E3FA4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		76228E752AB677120000EB9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		76228E772AB677170000EB9D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		76228E832AB6839E0000EB9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AccessibilityLocalizable.strings; sourceTree = "<group>"; };
+		76228E852AB683A30000EB9D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/AccessibilityLocalizable.strings"; sourceTree = "<group>"; };
+		76228E8D2AB68E820000EB9D /* LocalizableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableLabel.swift; sourceTree = "<group>"; };
+		76228E8E2AB68E820000EB9D /* LocalizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableButton.swift; sourceTree = "<group>"; };
+		762FF6722AB78F6B00073372 /* LocalizableNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableNavigationItem.swift; sourceTree = "<group>"; };
 		765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		765FF3F72AB10F8800A6EA05 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		766781DC2AA42C6D00D2A156 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		766866112AA11EA7006310C5 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
-		767D759E2AB3E7C30013E821 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		768C314F2AAE4391000EA015 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		76910A5A2AAB751F0085868D /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		76CF95282A9FB7B200BD5358 /* Ponto Diario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ponto Diario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +90,8 @@
 		76CF952A2A9FB7B200BD5358 /* Ponto Diario */ = {
 			isa = PBXGroup;
 			children = (
+				76228E8E2AB68E820000EB9D /* LocalizableButton.swift */,
+				76228E8D2AB68E820000EB9D /* LocalizableLabel.swift */,
 				76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */,
 				76CF952D2A9FB7B200BD5358 /* SceneDelegate.swift */,
 				76CF952F2A9FB7B200BD5358 /* HomeViewController.swift */,
@@ -98,7 +110,9 @@
 				760435362AB2446F008E3FA4 /* ToastView.xib */,
 				760435382AB24B9A008E3FA4 /* ToastView.swift */,
 				7604353A2AB29AB8008E3FA4 /* Theme.swift */,
-				767D759E2AB3E7C30013E821 /* LaunchScreenViewController.swift */,
+				76228E762AB677120000EB9D /* Localizable.strings */,
+				76228E842AB6839E0000EB9D /* AccessibilityLocalizable.strings */,
+				762FF6722AB78F6B00073372 /* LocalizableNavigationItem.swift */,
 			);
 			path = "Ponto Diario";
 			sourceTree = "<group>";
@@ -145,6 +159,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 76CF951F2A9FB7B200BD5358;
 			productRefGroup = 76CF95292A9FB7B200BD5358 /* Products */;
@@ -161,7 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76228E742AB677120000EB9D /* Localizable.strings in Resources */,
 				760435372AB2446F008E3FA4 /* ToastView.xib in Resources */,
+				76228E822AB6839E0000EB9D /* AccessibilityLocalizable.strings in Resources */,
 				76CF95382A9FB7B400BD5358 /* LaunchScreen.storyboard in Resources */,
 				76CF95352A9FB7B400BD5358 /* Assets.xcassets in Resources */,
 				76CF95332A9FB7B200BD5358 /* Main.storyboard in Resources */,
@@ -177,14 +194,16 @@
 			files = (
 				768C31502AAE4391000EA015 /* CardView.swift in Sources */,
 				760435352AB24381008E3FA4 /* ToastStyle.swift in Sources */,
+				76228E8F2AB68E820000EB9D /* LocalizableLabel.swift in Sources */,
 				76CF95302A9FB7B200BD5358 /* HomeViewController.swift in Sources */,
 				766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */,
 				760435392AB24B9A008E3FA4 /* ToastView.swift in Sources */,
 				76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */,
-				767D759F2AB3E7C30013E821 /* LaunchScreenViewController.swift in Sources */,
 				765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */,
 				765FF3F82AB10F8800A6EA05 /* CustomError.swift in Sources */,
 				7604353B2AB29AB8008E3FA4 /* Theme.swift in Sources */,
+				76228E902AB68E820000EB9D /* LocalizableButton.swift in Sources */,
+				762FF6732AB78F6B00073372 /* LocalizableNavigationItem.swift in Sources */,
 				766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */,
 				766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */,
 				76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */,
@@ -195,6 +214,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		76228E762AB677120000EB9D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76228E752AB677120000EB9D /* en */,
+				76228E772AB677170000EB9D /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		76228E842AB6839E0000EB9D /* AccessibilityLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76228E832AB6839E0000EB9D /* en */,
+				76228E852AB683A30000EB9D /* pt-BR */,
+			);
+			name = AccessibilityLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		76CF95312A9FB7B200BD5358 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -278,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
