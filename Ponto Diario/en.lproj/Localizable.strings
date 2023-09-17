@@ -36,5 +36,10 @@
 "Horas não trabalhadas:" = "(en)Horas não trabalhadas:";
 
 // MARK: ConfigurationViewController
+// ToastView messages
+"Dados atualizados com sucesso" = "(en)Dados atualizados com sucesso";
 
 // MARK: Helper
+"Erro ao salvar as configurações." = "(en)Erro ao salvar as configurações.";
+"Configurações não encontradas." = "(en)Configurações não encontradas.";
+"Não foi possível recuperar as configurações salvas." = "(en)Não foi possível recuperar as configurações salvas.";

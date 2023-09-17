@@ -24,20 +24,23 @@ class Helper {
             UserDefaults.standard.set(data, forKey: "configuration")
             return .success(())
         } catch {
-            return .failure(.missingData(message: "Erro ao salvar as configurações."))
+            let message = NSLocalizedString("Erro ao salvar as configurações.", comment: "Localizable")
+            return .failure(.missingData(message: message))
         }
     }
     
     func loadData() -> Result<ConfigurationModel, CustomError> {
         guard let data = UserDefaults.standard.data(forKey: "configuration") else {
-            return .failure(.missingData(message: "Configurações não encontradas."))
+            let message = NSLocalizedString("Configurações não encontradas.", comment: "Localizable")
+            return .failure(.missingData(message: message))
         }
         let decoder = JSONDecoder()
         do {
             let configuration = try decoder.decode(ConfigurationModel.self, from: data)
             return .success(configuration)
         } catch {
-            return .failure(.missingData(message: "Não foi possível recuperar as configurações salvas."))
+            let message = NSLocalizedString("Não foi possível recuperar as configurações salvas.", comment: "Localizable")
+            return .failure(.missingData(message: message))
         }
     }
     
