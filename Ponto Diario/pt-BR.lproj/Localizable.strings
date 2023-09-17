@@ -7,39 +7,39 @@
 */
 
 // MARK: MAIN - Home
-"Ponto Diário" = "(pt-br)Ponto Diário";
-"Horário de entrada" = "(pt-br)Horário de entrada";
-"Horário de saída para o almoço" = "(pt-br)Horário de saída para o almoço";
-"Horário de retorno do almoço" = "(pt-br)Horário de retorno do almoço";
-"Horário de saída" = "(pt-br)Horário de saída";
-"Calcular" = "(pt-br)Calcular";
-"Horas Trabalhadas:" = "(pt-br)Horas Trabalhadas:";
+"Ponto Diário" = "Ponto Diário";
+"Horário de entrada" = "Horário de entrada";
+"Horário de saída para o almoço" = "Horário de saída para o almoço";
+"Horário de retorno do almoço" = "Horário de retorno do almoço";
+"Horário de saída" = "Horário de saída";
+"Calcular" = "Calcular";
+"Horas Trabalhadas:" = "Horas Trabalhadas:";
 
 // MARK: MAIN - Configuration
-"Configurações" = "(pt-br)Configurações";
-"Carga horária diária" = "(pt-br)Carga horária diária";
-"Previsão de entrada no trabalho" = "(pt-br)Previsão de entrada no trabalho";
-"Previsão de saída para o almoço" = "(pt-br)Previsão de saída para o almoço";
-"Tempo de intervalo do almoço" = "(pt-br)Tempo de intervalo do almoço";
-"Salvar" = "(pt-br)Salvar";
+"Configurações" = "Configurações";
+"Carga horária diária" = "Carga horária diária";
+"Previsão de entrada no trabalho" = "Previsão de entrada no trabalho";
+"Previsão de saída para o almoço" = "Previsão de saída para o almoço";
+"Tempo de intervalo do almoço" = "Tempo de intervalo do almoço";
+"Salvar" = "Salvar";
 
 // MARK: HomeViewController
 // ToastView messages
-"Deve ser menor que o horário de saída para o almoço." = "(pt-br)Deve ser menor que o horário de saída para o almoço.";
-"Deve ser maior que o horário de entrada no trabalho." = "(pt-br)Deve ser maior que o horário de entrada no trabalho.";
-"Deve ser maior que o horário de saída para o almoço." = "(pt-br)Deve ser maior que o horário de saída para o almoço.";
-"Deve ser maior que o horário de retorno do almoço." = "(pt-br)Deve ser maior que o horário de retorno do almoço.";
-"Usando a padrão." = "(pt-br)Usando a padrão.";
+"Deve ser menor que o horário de saída para o almoço." = "Deve ser menor que o horário de saída para o almoço.";
+"Deve ser maior que o horário de entrada no trabalho." = "Deve ser maior que o horário de entrada no trabalho.";
+"Deve ser maior que o horário de saída para o almoço." = "Deve ser maior que o horário de saída para o almoço.";
+"Deve ser maior que o horário de retorno do almoço." = "Deve ser maior que o horário de retorno do almoço.";
+"Usando a padrão." = "Usando a padrão.";
 
 // Label messages
-"Horas extras:" = "(pt-br)Horas extras:";
-"Horas não trabalhadas:" = "(pt-br)Horas não trabalhadas:";
+"Horas extras:" = "Horas extras:";
+"Horas não trabalhadas:" = "Horas não trabalhadas:";
 
 // MARK: ConfigurationViewController
 // ToastView messages
-"Dados atualizados com sucesso" = "(pt-br)Dados atualizados com sucesso";
+"Dados atualizados com sucesso" = "Dados atualizados com sucesso";
 
 // MARK: Helper
-"Erro ao salvar as configurações." = "(pt-br)Erro ao salvar as configurações.";
-"Configurações não encontradas." = "(pt-br)Configurações não encontradas.";
-"Não foi possível recuperar as configurações salvas." = "(pt-br)Não foi possível recuperar as configurações salvas.";
+"Erro ao salvar as configurações." = "Erro ao salvar as configurações.";
+"Configurações não encontradas." = "Configurações não encontradas.";
+"Não foi possível recuperar as configurações salvas." = "Não foi possível recuperar as configurações salvas.";
