@@ -57,7 +57,8 @@ class HomeViewController: UIViewController {
             startWorkDatePicker.date = startWorkDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            toastView.setMessage("Deve ser menor que o horário de saída para o almoço.")
+            let message = NSLocalizedString("Deve ser menor que o horário de saída para o almoço.", comment: "Localizable")
+            toastView.setMessage(message)
             toastView.show()
             return
         }
@@ -73,7 +74,8 @@ class HomeViewController: UIViewController {
             lunchTimeStartDatePicker.date = lunchTimeStartDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            toastView.setMessage("Deve ser maior que o horário de entrada no trabalho.")
+            let message = NSLocalizedString("Deve ser maior que o horário de entrada no trabalho.", comment: "Localizable")
+            toastView.setMessage(message)
             toastView.show()
             return
         }
@@ -90,7 +92,8 @@ class HomeViewController: UIViewController {
             lunchTimeEndDatePicker.date = lunchTimeEndDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            toastView.setMessage("Deve ser maior que o horário de saída para o almoço.")
+            let message = NSLocalizedString("Deve ser maior que o horário de saída para o almoço.", comment: "Localizable")
+            toastView.setMessage(message)
             toastView.show()
             return
         }
@@ -111,7 +114,8 @@ class HomeViewController: UIViewController {
             endWorkTimeDatePicker.date = endWorkTimeDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            toastView.setMessage("Deve ser maior que o horário de retorno do almoço.")
+            let message = NSLocalizedString("Deve ser maior que o horário de retorno do almoço.", comment: "Localizable")
+            toastView.setMessage(message)
             toastView.show()
             return
         }
@@ -135,7 +139,9 @@ class HomeViewController: UIViewController {
         overtimeDurationTextLabel.isHidden = false
         overtimeDurationValueLabel.isHidden = false
         
-        let text = overtime > 0 ? "Horas extras:" : "Horas não trabalhadas:"
+        let overtimeString = NSLocalizedString("Horas extras:", comment: "Localizable")
+        let unworkedTimeString = NSLocalizedString("Horas não trabalhadas:", comment: "Localizable")
+        let text = overtime > 0 ? overtimeString : unworkedTimeString
         overtimeDurationTextLabel.text = text
         overtimeDurationValueLabel.text = helper.timeIntervalToHHmm(using: abs(overtime))
     }
@@ -191,7 +197,8 @@ class HomeViewController: UIViewController {
             configuration = loadedConfiguration
         case .failure(let error):
             let toastView = ToastView.loadFromNib(style: .neutral)
-            toastView.setMessage("\(error.localizedDescription) Usando a padrão.")
+            let message = NSLocalizedString("Usando a padrão.", comment: "Localizable")
+            toastView.setMessage("\(error.localizedDescription) \(message)")
             toastView.show()
         }
     }

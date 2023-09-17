@@ -50,7 +50,8 @@ class ConfigurationViewController: UIViewController {
             delegate?.updateDataSource(with: configuration)
             
             let toastView = ToastView.loadFromNib(style: .success)
-            toastView.setMessage("Dados atualizados com sucesso")
+            let message = NSLocalizedString("Dados atualizados com sucesso", comment: "Localizable")
+            toastView.setMessage(message)
             toastView.show()
         case .failure(let error):
             let toastView = ToastView.loadFromNib(style: .failed)

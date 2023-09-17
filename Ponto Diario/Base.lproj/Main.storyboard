@@ -35,13 +35,16 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SuR-DI-kUd">
                                                                         <rect key="frame" x="0.0" y="0.0" width="329" height="69.333333333333329"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-k9-StM">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-k9-StM" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de entrada"/>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333343" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98492002">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -55,13 +58,16 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dtd-K0-X1N">
                                                                         <rect key="frame" x="0.0" y="85.333333333333343" width="329" height="69.333333333333343"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-6K-K5X">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-6K-K5X" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de saída para o almoço"/>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98539305">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -75,13 +81,16 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uxs-8x-NOY">
                                                                         <rect key="frame" x="0.0" y="170.66666666666669" width="329" height="69.333333333333314"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de retorno do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-pO-aad">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de retorno do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-pO-aad" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de retorno do almoço"/>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98580301">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -95,13 +104,16 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pS4-XK-A8O">
                                                                         <rect key="frame" x="0.0" y="256" width="329" height="69.333333333333314"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-7z-erh">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário de saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-7z-erh" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de saída"/>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98619294">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -114,7 +126,7 @@
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-Ii-zgy">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-Ii-zgy" customClass="LocalizableButton" customModule="Ponto_Diario" customModuleProvider="target">
                                                                 <rect key="frame" x="55.666666666666686" y="373.33333333333331" width="250" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="0Df-xK-vH7"/>
@@ -126,6 +138,9 @@
                                                                     <color key="baseForegroundColor" name="buttonLabel"/>
                                                                     <color key="baseBackgroundColor" name="buttonBackground"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Calcular"/>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="calculateTotalWorkTime:" destination="mIM-VX-yTI" eventType="touchUpInside" id="obU-PB-ZtA"/>
                                                                 </connections>
@@ -150,11 +165,15 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ivh-po-m1w">
                                                                         <rect key="frame" x="0.0" y="0.0" width="329" height="24"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Horas Trabalhadas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agX-gC-IIt">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Horas Trabalhadas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agX-gC-IIt" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="169" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                                 <color key="textColor" name="cardLabelPrimary"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Horas Trabalhadas:"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horas Trabalhadas:"/>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-wP-hC4">
                                                                                 <rect key="frame" x="185" y="0.0" width="144" height="24"/>
@@ -233,7 +252,7 @@
                             <constraint firstItem="BVV-ac-NeV" firstAttribute="trailing" secondItem="pTB-sr-ETf" secondAttribute="trailing" id="vcf-EP-yfW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Ponto Diário" id="Bhv-LK-R7N">
+                    <navigationItem key="navigationItem" title="Ponto Diário" id="Bhv-LK-R7N" customClass="LocalizableNavigationItem" customModule="Ponto_Diario" customModuleProvider="target">
                         <barButtonItem key="backBarButtonItem" title=" " id="Scg-Cf-cm1"/>
                         <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="Hpa-Ij-81a">
                             <color key="tintColor" name="navigationLabel"/>
@@ -241,6 +260,9 @@
                                 <segue destination="mxi-AR-kaO" kind="show" id="2JP-yM-X9v"/>
                             </connections>
                         </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Ponto Diário"/>
+                        </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>
                         <outlet property="endWorkTimeDatePicker" destination="qHC-pD-ymQ" id="nRk-3r-anJ"/>
@@ -279,13 +301,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LkX-Ai-VAE">
                                                                 <rect key="frame" x="0.0" y="0.0" width="329" height="69.333333333333329"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga horária diária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-b3-H2S">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga horária diária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-b3-H2S" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Carga horária diária"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333343" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99074197">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -296,13 +321,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LM4-Xv-8IN">
                                                                 <rect key="frame" x="0.0" y="85.333333333333343" width="329" height="69.333333333333343"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de entrada no trabalho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSg-Q2-DHa">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de entrada no trabalho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSg-Q2-DHa" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Previsão de entrada no trabalho"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99115098">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -313,13 +341,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-BK-84b">
                                                                 <rect key="frame" x="0.0" y="170.66666666666669" width="329" height="69.333333333333314"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-09-f1F">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previsão de saída para o almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-09-f1F" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Previsão de saída para o almoço"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99151695">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -330,13 +361,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="toU-oD-HP7">
                                                                 <rect key="frame" x="0.0" y="256" width="329" height="69.333333333333314"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de intervalo do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-hl-cHy">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de intervalo do almoço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-hl-cHy" customClass="LocalizableLabel" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="329" height="19.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Tempo de intervalo do almoço"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99189103">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -346,7 +380,7 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-SG-QyF">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-SG-QyF" customClass="LocalizableButton" customModule="Ponto_Diario" customModuleProvider="target">
                                                         <rect key="frame" x="55.666666666666686" y="373.33333333333331" width="250" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="blg-NB-bC4"/>
@@ -358,6 +392,9 @@
                                                             <color key="baseForegroundColor" name="buttonLabel"/>
                                                             <color key="baseBackgroundColor" name="buttonBackground"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Salvar"/>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="saveData:" destination="mxi-AR-kaO" eventType="touchUpInside" id="mbH-gg-mUQ"/>
                                                         </connections>
@@ -402,7 +439,7 @@
                             <constraint firstItem="2YF-5L-Mlb" firstAttribute="trailing" secondItem="yXE-ij-lt7" secondAttribute="trailing" id="tv0-Et-6Qn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Configurações" id="v98-1g-Yhf">
+                    <navigationItem key="navigationItem" title="Configurações" id="v98-1g-Yhf" customClass="LocalizableNavigationItem" customModule="Ponto_Diario" customModuleProvider="target">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="SVr-6k-RIc">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" id="1Iv-nG-tFr">
                                 <rect key="frame" x="298.66666666666669" y="5.6666666666666679" width="78.333333333333314" height="33"/>
@@ -419,6 +456,9 @@
                                 </connections>
                             </segmentedControl>
                         </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Configurações"/>
+                        </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>
                         <outlet property="lunchBreakDurationDatePicker" destination="33E-Su-maO" id="4oF-M0-b5j"/>

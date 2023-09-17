@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Ponto Diario
+
+  Created by Luciano Da Silva Berchon on 16/09/23.
+  
+*/
+
+// MARK: MAIN - Home
+"Ponto Diário" = "Daily Time Tracker";
+"Horário de entrada" = "Entry time";
+"Horário de saída para o almoço" = "Lunch break start time";
+"Horário de retorno do almoço" = "Lunch break end time";
+"Horário de saída" = "Exit time";
+"Calcular" = "Calculate";
+"Horas Trabalhadas:" = "Worked Hours:";
+
+// MARK: MAIN - Configuration
+"Configurações" = "Settings";
+"Carga horária diária" = "Daily work hours";
+"Previsão de entrada no trabalho" = "Predicted entry time";
+"Previsão de saída para o almoço" = "Predicted lunch break start time";
+"Tempo de intervalo do almoço" = "Lunch break duration";
+"Salvar" = "Save";
+
+// MARK: HomeViewController
+// ToastView messages
+"Deve ser menor que o horário de saída para o almoço." = "Must be earlier than lunch break start time.";
+"Deve ser maior que o horário de entrada no trabalho." = "Must be later than entry time.";
+"Deve ser maior que o horário de saída para o almoço." = "Must be later than lunch break start time.";
+"Deve ser maior que o horário de retorno do almoço." = "Must be later than lunch break end time.";
+"Usando a padrão." = "Using the default.";
+
+// Label messages
+"Horas extras:" = "Overtime:";
+"Horas não trabalhadas:" = "Unworked Hours:";
+
+// MARK: ConfigurationViewController
+// ToastView messages
+"Dados atualizados com sucesso" = "Data updated successfully";
+
+// MARK: Helper
+"Erro ao salvar as configurações." = "Error saving settings.";
+"Configurações não encontradas." = "Settings not found.";
+"Não foi possível recuperar as configurações salvas." = "Could not retrieve saved settings.";
