@@ -44,7 +44,7 @@
                                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de entrada"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333343" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98492002">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -67,7 +67,7 @@
                                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de saída para o almoço"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98539305">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -90,7 +90,7 @@
                                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de retorno do almoço"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98580301">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -113,7 +113,7 @@
                                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de saída"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
-                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ">
+                                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                                 <date key="date" timeIntervalSinceReferenceDate="715575074.98619294">
                                                                                     <!--2023-09-05 02:51:14 +0000-->
@@ -310,7 +310,7 @@
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Carga horária diária"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333343" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99074197">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -330,7 +330,7 @@
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Previsão de entrada no trabalho"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99115098">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -350,7 +350,7 @@
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Previsão de saída para o almoço"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99151695">
                                                                             <!--2023-09-05 02:51:14 +0000-->
@@ -370,7 +370,7 @@
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Tempo de intervalo do almoço"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
-                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO">
+                                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="19.333333333333314" width="329" height="50"/>
                                                                         <date key="date" timeIntervalSinceReferenceDate="715575074.99189103">
                                                                             <!--2023-09-05 02:51:14 +0000-->
