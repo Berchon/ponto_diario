@@ -16,8 +16,24 @@
 "Horas Trabalhadas:" = "(pt-br)Horas Trabalhadas:";
 
 // MARK: MAIN - Configuration
+"Configurações" = "(pt-br)Configurações";
+"Carga horária diária" = "(pt-br)Carga horária diária";
+"Previsão de entrada no trabalho" = "(pt-br)Previsão de entrada no trabalho";
+"Previsão de saída para o almoço" = "(pt-br)Previsão de saída para o almoço";
+"Tempo de intervalo do almoço" = "(pt-br)Tempo de intervalo do almoço";
+"Salvar" = "(pt-br)Salvar";
 
 // MARK: HomeViewController
+// ToastView messages
+"Deve ser menor que o horário de saída para o almoço." = "(pt-br)Deve ser menor que o horário de saída para o almoço.";
+"Deve ser maior que o horário de entrada no trabalho." = "(pt-br)Deve ser maior que o horário de entrada no trabalho.";
+"Deve ser maior que o horário de saída para o almoço." = "(pt-br)Deve ser maior que o horário de saída para o almoço.";
+"Deve ser maior que o horário de retorno do almoço." = "(pt-br)Deve ser maior que o horário de retorno do almoço.";
+"Usando a padrão." = "(pt-br)Usando a padrão.";
+
+// Label messages
+"Horas extras:" = "(pt-br)Horas extras:";
+"Horas não trabalhadas:" = "(pt-br)Horas não trabalhadas:";
 
 // MARK: ConfigurationViewController
 
