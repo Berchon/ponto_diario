@@ -20,7 +20,6 @@ class CustomDatePicker: UIDatePicker {
     }
     
     func configure() {
-        let blueColor = UIColor(named: "navigationBackground")
         if let color = UIColor(named: "navigationBackground") {
             let firstView = subviews[0]
             firstView.tintColor = color // muda somente o label da data e da hora

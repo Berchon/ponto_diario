@@ -9,11 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    // TODO: Enum de strings
-    // TODO: Multiplos idiomas
     // TODO: fix alerts messages
     
     // MARK: Properties
+    let strings = HomeViewControllerStringsEnum.self
     let helper = Helper()
     
     var configuration: ConfigurationModel = ConfigurationModel(
@@ -57,7 +56,7 @@ class HomeViewController: UIViewController {
             startWorkDatePicker.date = startWorkDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            let message = NSLocalizedString("Deve ser menor que o horário de saída para o almoço.", comment: "Localizable")
+            let message = strings.Must_be_earlier_than_lunch_break_start_time.localized
             toastView.setMessage(message)
             toastView.show()
             return
@@ -74,7 +73,7 @@ class HomeViewController: UIViewController {
             lunchTimeStartDatePicker.date = lunchTimeStartDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            let message = NSLocalizedString("Deve ser maior que o horário de entrada no trabalho.", comment: "Localizable")
+            let message = strings.Must_be_later_than_entry_time.localized
             toastView.setMessage(message)
             toastView.show()
             return
@@ -92,7 +91,7 @@ class HomeViewController: UIViewController {
             lunchTimeEndDatePicker.date = lunchTimeEndDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            let message = NSLocalizedString("Deve ser maior que o horário de saída para o almoço.", comment: "Localizable")
+            let message = strings.Must_be_later_than_lunch_break_start_time.localized
             toastView.setMessage(message)
             toastView.show()
             return
@@ -114,7 +113,7 @@ class HomeViewController: UIViewController {
             endWorkTimeDatePicker.date = endWorkTimeDatePickerLastValue
             
             let toastView = ToastView.loadFromNib(style: .alert)
-            let message = NSLocalizedString("Deve ser maior que o horário de retorno do almoço.", comment: "Localizable")
+            let message = strings.Must_be_later_than_lunch_break_end_time.localized
             toastView.setMessage(message)
             toastView.show()
             return
@@ -139,8 +138,8 @@ class HomeViewController: UIViewController {
         overtimeDurationTextLabel.isHidden = false
         overtimeDurationValueLabel.isHidden = false
         
-        let overtimeString = NSLocalizedString("Horas extras:", comment: "Localizable")
-        let unworkedTimeString = NSLocalizedString("Horas não trabalhadas:", comment: "Localizable")
+        let overtimeString = strings.Overtime.localized
+        let unworkedTimeString = strings.Unworked_hours.localized
         let text = overtime > 0 ? overtimeString : unworkedTimeString
         overtimeDurationTextLabel.text = text
         overtimeDurationValueLabel.text = helper.timeIntervalToHHmm(using: abs(overtime))
@@ -197,7 +196,7 @@ class HomeViewController: UIViewController {
             configuration = loadedConfiguration
         case .failure(let error):
             let toastView = ToastView.loadFromNib(style: .neutral)
-            let message = NSLocalizedString("Usando a padrão.", comment: "Localizable")
+            let message = strings.Using_the_default
             toastView.setMessage("\(error.localizedDescription) \(message)")
             toastView.show()
         }
