@@ -9,6 +9,8 @@ import Foundation
 
 class Helper {
     // MARK: Properties
+    let strings = HelperStringsEnum.self
+    
     let currentDate = Date()
     let dateFormatter = DateFormatter()
     let calendar = Calendar.current
@@ -24,14 +26,14 @@ class Helper {
             UserDefaults.standard.set(data, forKey: "configuration")
             return .success(())
         } catch {
-            let message = NSLocalizedString("Erro ao salvar as configurações.", comment: "Localizable")
+            let message = strings.Error_saving_settings.localized
             return .failure(.missingData(message: message))
         }
     }
     
     func loadData() -> Result<ConfigurationModel, CustomError> {
         guard let data = UserDefaults.standard.data(forKey: "configuration") else {
-            let message = NSLocalizedString("Configurações não encontradas.", comment: "Localizable")
+            let message = strings.Settings_not_found.localized
             return .failure(.missingData(message: message))
         }
         let decoder = JSONDecoder()
@@ -39,7 +41,7 @@ class Helper {
             let configuration = try decoder.decode(ConfigurationModel.self, from: data)
             return .success(configuration)
         } catch {
-            let message = NSLocalizedString("Não foi possível recuperar as configurações salvas.", comment: "Localizable")
+            let message = strings.Could_not_retrieve_saved_settings.localized
             return .failure(.missingData(message: message))
         }
     }

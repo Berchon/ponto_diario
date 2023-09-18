@@ -11,6 +11,7 @@ class ConfigurationViewController: UIViewController {
     
     // MARK: Properties
     let helper = Helper()
+    let strings = ConfigurationViewControllerStringsEnum.self
 
     var configuration: ConfigurationModel = ConfigurationModel(
         requiredDailyHours: TimeInterval(),
@@ -50,7 +51,7 @@ class ConfigurationViewController: UIViewController {
             delegate?.updateDataSource(with: configuration)
             
             let toastView = ToastView.loadFromNib(style: .success)
-            let message = NSLocalizedString("Dados atualizados com sucesso", comment: "Localizable")
+            let message = strings.Data_updated_successfully.localized
             toastView.setMessage(message)
             toastView.show()
         case .failure(let error):

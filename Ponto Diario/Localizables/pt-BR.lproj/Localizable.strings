@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Ponto Diario
+
+  Created by Luciano Da Silva Berchon on 16/09/23.
+  
+*/
+
+// MARK: MAIN - Home
+"MainHome_Daily_time_tracker" = "Ponto Diário";
+"MainHome_Entry_time" = "Horário de entrada";
+"MainHome_Lunch_break_start_time" = "Horário de saída para o almoço";
+"MainHome_Lunch_break_end_time" = "Horário de retorno do almoço";
+"MainHome_Exit_time" = "Horário de saída";
+"MainHome_Calculate" = "Calcular";
+"MainHome_Worked_hours" = "Horas Trabalhadas:";
+
+// MARK: MAIN - Configuration
+"MainConfiguration_Settings" = "Configurações";
+"MainConfiguration_Daily_work_hours" = "Carga horária diária";
+"MainConfiguration_Predicted_entry_time" = "Previsão de entrada no trabalho";
+"MainConfiguration_Predicted_lunch_break_start_time" = "Previsão de saída para o almoço";
+"MainConfiguration_Lunch_break_duration" = "Tempo de intervalo do almoço";
+"MainConfiguration_Save" = "Salvar";
+
+// MARK: HomeViewController
+// ToastView messages
+"HomeViewControllerStringsEnum_Must_be_earlier_than_lunch_break_start_time" = "Deve ser menor que o horário de saída para o almoço.";
+"HomeViewControllerStringsEnum_Must_be_later_than_entry_time" = "Deve ser maior que o horário de entrada no trabalho.";
+"HomeViewControllerStringsEnum_Must_be_later_than_lunch_break_start_time" = "Deve ser maior que o horário de saída para o almoço.";
+"HomeViewControllerStringsEnum_Must_be_later_than_lunch_break_end_time" = "Deve ser maior que o horário de retorno do almoço.";
+"HomeViewControllerStringsEnum_Using_the_default" = "Usando a padrão.";
+
+// Label messages
+"HomeViewControllerStringsEnum_Overtime" = "Horas extras:";
+"HomeViewControllerStringsEnum_Unworked_hours" = "Horas não trabalhadas:";
+
+// MARK: ConfigurationViewController
+// ToastView messages
+"ConfigurationViewControllerStringsEnum_Data_updated_successfully" = "Dados atualizados com sucesso";
+
+// MARK: Helper
+"HelperStringsEnum_Error_saving_settings" = "Erro ao salvar as configurações.";
+"HelperStringsEnum_Settings_not_found" = "Configurações não encontradas.";
+"HelperStringsEnum_Could_not_retrieve_saved_settings" = "Não foi possível recuperar as configurações salvas.";

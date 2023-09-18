@@ -21,6 +21,9 @@
 		766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766781DC2AA42C6D00D2A156 /* Helper.swift */; };
 		766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866112AA11EA7006310C5 /* ConfigurationViewController.swift */; };
 		766866142AA132D0006310C5 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */; };
+		7670E9042AB88F6100F22E5E /* ConfigurationViewControllerStringsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670E9032AB88F6100F22E5E /* ConfigurationViewControllerStringsEnum.swift */; };
+		7670E9062AB8CBC400F22E5E /* HelperStringsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670E9052AB8CBC400F22E5E /* HelperStringsEnum.swift */; };
+		7670E9082AB8CE3A00F22E5E /* HomeViewControllerStringsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670E9072AB8CE3A00F22E5E /* HomeViewControllerStringsEnum.swift */; };
 		768C31502AAE4391000EA015 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C314F2AAE4391000EA015 /* CardView.swift */; };
 		76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76910A5A2AAB751F0085868D /* CustomDatePicker.swift */; };
 		76CF952C2A9FB7B200BD5358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */; };
@@ -48,6 +51,9 @@
 		766781DC2AA42C6D00D2A156 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		766866112AA11EA7006310C5 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
+		7670E9032AB88F6100F22E5E /* ConfigurationViewControllerStringsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewControllerStringsEnum.swift; sourceTree = "<group>"; };
+		7670E9052AB8CBC400F22E5E /* HelperStringsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperStringsEnum.swift; sourceTree = "<group>"; };
+		7670E9072AB8CE3A00F22E5E /* HomeViewControllerStringsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerStringsEnum.swift; sourceTree = "<group>"; };
 		768C314F2AAE4391000EA015 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		76910A5A2AAB751F0085868D /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		76CF95282A9FB7B200BD5358 /* Ponto Diario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ponto Diario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7670E8FE2AB88CA700F22E5E /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				76228E762AB677120000EB9D /* Localizable.strings */,
+				76228E842AB6839E0000EB9D /* AccessibilityLocalizable.strings */,
+				762FF6722AB78F6B00073372 /* LocalizableNavigationItem.swift */,
+				76228E8D2AB68E820000EB9D /* LocalizableLabel.swift */,
+				76228E8E2AB68E820000EB9D /* LocalizableButton.swift */,
+				7670E9032AB88F6100F22E5E /* ConfigurationViewControllerStringsEnum.swift */,
+				7670E9052AB8CBC400F22E5E /* HelperStringsEnum.swift */,
+				7670E9072AB8CE3A00F22E5E /* HomeViewControllerStringsEnum.swift */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		7670E8FF2AB88CD300F22E5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76CF95342A9FB7B400BD5358 /* Assets.xcassets */,
+				76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */,
+				76CF952D2A9FB7B200BD5358 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7670E9002AB88D0200F22E5E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				76910A5A2AAB751F0085868D /* CustomDatePicker.swift */,
+				768C314F2AAE4391000EA015 /* CardView.swift */,
+				760435342AB24381008E3FA4 /* ToastStyle.swift */,
+				760435362AB2446F008E3FA4 /* ToastView.xib */,
+				760435382AB24B9A008E3FA4 /* ToastView.swift */,
+				7604353A2AB29AB8008E3FA4 /* Theme.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7670E9012AB88D4100F22E5E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				766781DC2AA42C6D00D2A156 /* Helper.swift */,
+				765FF3F72AB10F8800A6EA05 /* CustomError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7670E9022AB88D5600F22E5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		76CF951F2A9FB7B200BD5358 = {
 			isa = PBXGroup;
 			children = (
@@ -90,29 +151,17 @@
 		76CF952A2A9FB7B200BD5358 /* Ponto Diario */ = {
 			isa = PBXGroup;
 			children = (
-				76228E8E2AB68E820000EB9D /* LocalizableButton.swift */,
-				76228E8D2AB68E820000EB9D /* LocalizableLabel.swift */,
-				76CF952B2A9FB7B200BD5358 /* AppDelegate.swift */,
-				76CF952D2A9FB7B200BD5358 /* SceneDelegate.swift */,
+				7670E9022AB88D5600F22E5E /* Models */,
+				7670E9012AB88D4100F22E5E /* Helpers */,
+				7670E9002AB88D0200F22E5E /* Components */,
+				7670E8FF2AB88CD300F22E5E /* Resources */,
+				7670E8FE2AB88CA700F22E5E /* Localizables */,
 				76CF952F2A9FB7B200BD5358 /* HomeViewController.swift */,
 				766866112AA11EA7006310C5 /* ConfigurationViewController.swift */,
 				76CF95312A9FB7B200BD5358 /* Main.storyboard */,
-				76CF95342A9FB7B400BD5358 /* Assets.xcassets */,
 				76CF95362A9FB7B400BD5358 /* LaunchScreen.storyboard */,
 				76CF95392A9FB7B400BD5358 /* Info.plist */,
 				766866132AA132D0006310C5 /* HomeViewControllerDelegate.swift */,
-				766781DC2AA42C6D00D2A156 /* Helper.swift */,
-				76910A5A2AAB751F0085868D /* CustomDatePicker.swift */,
-				768C314F2AAE4391000EA015 /* CardView.swift */,
-				765FF3F52AB0F09C00A6EA05 /* ConfigurationModel.swift */,
-				765FF3F72AB10F8800A6EA05 /* CustomError.swift */,
-				760435342AB24381008E3FA4 /* ToastStyle.swift */,
-				760435362AB2446F008E3FA4 /* ToastView.xib */,
-				760435382AB24B9A008E3FA4 /* ToastView.swift */,
-				7604353A2AB29AB8008E3FA4 /* Theme.swift */,
-				76228E762AB677120000EB9D /* Localizable.strings */,
-				76228E842AB6839E0000EB9D /* AccessibilityLocalizable.strings */,
-				762FF6722AB78F6B00073372 /* LocalizableNavigationItem.swift */,
 			);
 			path = "Ponto Diario";
 			sourceTree = "<group>";
@@ -198,10 +247,13 @@
 				76CF95302A9FB7B200BD5358 /* HomeViewController.swift in Sources */,
 				766781DD2AA42C6D00D2A156 /* Helper.swift in Sources */,
 				760435392AB24B9A008E3FA4 /* ToastView.swift in Sources */,
+				7670E9082AB8CE3A00F22E5E /* HomeViewControllerStringsEnum.swift in Sources */,
 				76910A5B2AAB751F0085868D /* CustomDatePicker.swift in Sources */,
 				765FF3F62AB0F09C00A6EA05 /* ConfigurationModel.swift in Sources */,
 				765FF3F82AB10F8800A6EA05 /* CustomError.swift in Sources */,
+				7670E9042AB88F6100F22E5E /* ConfigurationViewControllerStringsEnum.swift in Sources */,
 				7604353B2AB29AB8008E3FA4 /* Theme.swift in Sources */,
+				7670E9062AB8CBC400F22E5E /* HelperStringsEnum.swift in Sources */,
 				76228E902AB68E820000EB9D /* LocalizableButton.swift in Sources */,
 				762FF6732AB78F6B00073372 /* LocalizableNavigationItem.swift in Sources */,
 				766866122AA11EA7006310C5 /* ConfigurationViewController.swift in Sources */,

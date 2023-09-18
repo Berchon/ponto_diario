@@ -41,7 +41,7 @@
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
-                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de entrada"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Entry_time"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-dX-BaT" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -64,7 +64,7 @@
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
-                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de saída para o almoço"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Lunch_break_start_time"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Eu-7TB" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -87,7 +87,7 @@
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
-                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de retorno do almoço"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Lunch_break_end_time"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-Z8-61Q" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -110,7 +110,7 @@
                                                                                 <color key="textColor" name="cardLabelSecondary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
-                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horário de saída"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Exit_time"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-pD-ymQ" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -139,7 +139,7 @@
                                                                     <color key="baseBackgroundColor" name="buttonBackground"/>
                                                                 </buttonConfiguration>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Calcular"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Calculate"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="calculateTotalWorkTime:" destination="mIM-VX-yTI" eventType="touchUpInside" id="obU-PB-ZtA"/>
@@ -172,7 +172,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Horas Trabalhadas:"/>
-                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Horas Trabalhadas:"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Worked_hours"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-wP-hC4">
@@ -261,7 +261,7 @@
                             </connections>
                         </barButtonItem>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Ponto Diário"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Daily_time_tracker"/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>
@@ -307,7 +307,7 @@
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Carga horária diária"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainConfiguration_Daily_work_hours"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tf-apj" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -327,7 +327,7 @@
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Previsão de entrada no trabalho"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainConfiguration_Predicted_entry_time"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-Lu-r4a" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -347,7 +347,7 @@
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Previsão de saída para o almoço"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainConfiguration_Predicted_lunch_break_start_time"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-kY-qci" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -367,7 +367,7 @@
                                                                         <color key="textColor" name="cardLabelSecondary"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Tempo de intervalo do almoço"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainConfiguration_Lunch_break_duration"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Su-maO" customClass="CustomDatePicker" customModule="Ponto_Diario" customModuleProvider="target">
@@ -393,7 +393,7 @@
                                                             <color key="baseBackgroundColor" name="buttonBackground"/>
                                                         </buttonConfiguration>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Salvar"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainConfiguration_Save"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="saveData:" destination="mxi-AR-kaO" eventType="touchUpInside" id="mbH-gg-mUQ"/>
@@ -457,7 +457,7 @@
                             </segmentedControl>
                         </barButtonItem>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="Configurações"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainConfiguration_Settings"/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>

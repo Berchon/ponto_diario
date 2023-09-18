@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Ponto Diario
+
+  Created by Luciano Da Silva Berchon on 16/09/23.
+  
+*/
+
+// MARK: MAIN - Home
+"MainHome_Daily_time_tracker" = "Daily Time Tracker";
+"MainHome_Entry_time" = "Entry time";
+"MainHome_Lunch_break_start_time" = "Lunch break start time";
+"MainHome_Lunch_break_end_time" = "Lunch break end time";
+"MainHome_Exit_time" = "Exit time";
+"MainHome_Calculate" = "Calculate";
+"MainHome_Worked_hours" = "Worked Hours:";
+
+// MARK: MAIN - Configuration
+"MainConfiguration_Settings" = "Settings";
+"MainConfiguration_Daily_work_hours" = "Daily work hours";
+"MainConfiguration_Predicted_entry_time" = "Predicted entry time";
+"MainConfiguration_Predicted_lunch_break_start_time" = "Predicted lunch break start time";
+"MainConfiguration_Lunch_break_duration" = "Lunch break duration";
+"MainConfiguration_Save" = "Save";
+
+// MARK: HomeViewController
+// ToastView messages
+"HomeViewControllerStringsEnum_Must_be_earlier_than_lunch_break_start_time" = "Must be earlier than lunch break start time.";
+"HomeViewControllerStringsEnum_Must_be_later_than_entry_time" = "Must be later than entry time.";
+"HomeViewControllerStringsEnum_Must_be_later_than_lunch_break_start_time" = "Must be later than lunch break start time.";
+"HomeViewControllerStringsEnum_Must_be_later_than_lunch_break_end_time" = "Must be later than lunch break end time.";
+"HomeViewControllerStringsEnum_Using_the_default" = "Using the default.";
+
+// Label messages
+"HomeViewControllerStringsEnum_Overtime" = "Overtime:";
+"HomeViewControllerStringsEnum_Unworked_hours" = "Unworked Hours:";
+
+// MARK: ConfigurationViewController
+// ToastView messages
+"ConfigurationViewControllerStringsEnum_Data_updated_successfully" = "Data updated successfully";
+
+// MARK: Helper
+"HelperStringsEnum_Error_saving_settings" = "Error saving settings.";
+"HelperStringsEnum_Settings_not_found" = "Settings not found.";
+"HelperStringsEnum_Could_not_retrieve_saved_settings" = "Could not retrieve saved settings.";
