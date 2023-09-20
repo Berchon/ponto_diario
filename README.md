@@ -1,6 +1,9 @@
 <div align="right">
 [🇧🇷](README_pt-br.md "Visualize o README em Português")
 </div>
+<div align="right">
+  <a href="README_pt-br.md" title="Visualize o README em Português"><h1>🇧🇷</h1></a>
+</div>
 
 # Daily Time Tracker App
 

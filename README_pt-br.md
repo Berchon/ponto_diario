@@ -1,6 +1,9 @@
 <div align="right">
 [🇺🇸](README_pt-br.md "View the README in English")
 </div>
+<div align="right">
+  <a href="README_pt-br.md" title="View the README in English"><h1>🇺🇸</h1></a>
+</div>
 
 # Aplicativo Ponto Diário
 
