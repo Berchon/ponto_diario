@@ -1,8 +1,9 @@
 <div align="right">
-[🇺🇸](README_pt-br.md "View the README in English")
-</div>
-<div align="right">
-  <a href="https://github.com/Berchon/ponto_diario/blob/main/README.md" title="View the README in English"><h1>🇺🇸</h1></a>
+  <h1>
+    <a href="./README.md" title="View the README in English">
+      🇺🇸
+    </a>
+  </h1>
 </div>
 
 # Aplicativo Ponto Diário
