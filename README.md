@@ -13,13 +13,11 @@ The Daily Time Tracker App is a simple and practical tool designed to help users
 | App Video | Launch Screen | Home Screen (Light) |
 | :---: | :---: | :---: |
 | <img src="./imgs/video.gif" height="400"> | <img src="./imgs/lauchScreen.png" height="400"> | <img src="./imgs/home_light.png" height="400"> |
-
+|  |  |  |
 | Alert Message (Light) | Hours Worked Calculation (Light) | Settings Screen (Light) |
-| :---: | :---: | :---: |
 | <img src="./imgs/home_alert.png" height="400"> | <img src="./imgs/home_calculate.png" height="400"> | <img src="./imgs/configuracoes_light.png" height="400"> |
-
+|  |  |  |
 | Alert Message (Dark) | Hours Worked Calculation (Dark) | Settings Screen (Dark) |
-| :---: | :---: | :---: |
 | <img src="./imgs/home_alert_dark.png" height="400"> | <img src="./imgs/home_calculate_dark.png" height="400"> | <img src="./imgs/configuracoes_dark.png" height="400"> |
 
 ## Features

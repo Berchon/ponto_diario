@@ -13,13 +13,11 @@ O Aplicativo Ponto Diário é uma ferramenta simples e prática para auxiliar os
 | Vídeo do App | Tela de Carregamento | Tela Inicial (light) |
 | :---: | :---: | :---: |
 | <img src="./imgs/video.gif" height="400"> | <img src="./imgs/lauchScreen.png" height="400"> | <img src="./imgs/home_light.png" height="400"> |
-
+|  |  |  |
 | Mensagem de Alerta (light) | Cálculo de Horas Trabalhadas (light) | Tela de Configurações (light) |
-| :---: | :---: | :---: |
 | <img src="./imgs/home_alert.png" height="400"> | <img src="./imgs/home_calculate.png" height="400"> | <img src="./imgs/configuracoes_light.png" height="400"> |
-
+|  |  |  |
 | Mensagem de Alerta (dark) | Cálculo de Horas Trabalhadas (dark) | Tela de Configurações (dark) |
-| :---: | :---: | :---: |
 | <img src="./imgs/home_alert_dark.png" height="400"> | <img src="./imgs/home_calculate_dark.png" height="400"> | <img src="./imgs/configuracoes_dark.png" height="400"> |
 
 ## Recursos
