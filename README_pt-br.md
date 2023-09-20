@@ -1,5 +1,5 @@
 <div align="right">
-  [:us:](README.md "View the README in English")
+[🇺🇸](README_pt-br.md "View the README in English")
 </div>
 
 # Aplicativo Ponto Diário

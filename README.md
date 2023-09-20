@@ -1,5 +1,5 @@
 <div align="right">
-  [:br:](README_pt-br.md "Visualize o README em Português")
+[🇧🇷](README_pt-br.md "Visualize o README em Português")
 </div>
 
 # Daily Time Tracker App
