@@ -1,20 +1,62 @@
-# Daily Time Tracker App :us:
+<div align="right">
+  [:br:](README_pt-br.md "Visualize o README em Português")
+</div>
 
-Welcome to the repository of the *Daily Time Tracker App*!
+# Daily Time Tracker App
 
-The Daily Time Tracker App is a simple and practical tool designed to help users manage their daily work hours efficiently. This app is designed to calculate a projected time of departure based on user-configured work hours and display the total time worked on the current day.
+## Welcome to the Daily Time Tracker App Repository!
+
+The Daily Time Tracker App is a simple and practical tool designed to help users manage their daily work schedule. This app is designed to calculate an estimated departure time based on user-configured working hours and display the total time worked on the current day.
+
+## App Screenshots
+
+| App Video | Launch Screen | Home Screen (Light) |
+| :---: | :---: | :---: |
+| <img src="./imgs/video.gif" height="400"> | <img src="./imgs/lauchScreen.png" height="400"> | <img src="./imgs/home_light.png" height="400"> |
+
+| Alert Message (Light) | Hours Worked Calculation (Light) | Settings Screen (Light) |
+| :---: | :---: | :---: |
+| <img src="./imgs/home_alert.png" height="400"> | <img src="./imgs/home_calculate.png" height="400"> | <img src="./imgs/configuracoes_light.png" height="400"> |
+
+| Alert Message (Dark) | Hours Worked Calculation (Dark) | Settings Screen (Dark) |
+| :---: | :---: | :---: |
+| <img src="./imgs/home_alert_dark.png" height="400"> | <img src="./imgs/home_calculate_dark.png" height="400"> | <img src="./imgs/configuracoes_dark.png" height="400"> |
 
 ## Features
 
-- *Projected Departure:* Based on the defined work hours, the app calculates an estimated time of departure for the user.
-- *Time Tracking:* Monitor the total hours worked on the current day.
-- *Custom Configuration:* Set your daily work hours in the app's settings.
+- Departure Prediction: Based on defined working hours, the app calculates an estimate of the user's departure time.
+- Time Tracking: Monitor the total hours worked on the current day.
+- Custom Configuration: Set your daily working hours in the app settings.
+- Language Selection: Based on your mobile device's language settings, the app automatically selects the language (currently only English and Portuguese).
+- Custom Theme: Choose whether the app uses light mode or dark mode.
+
+## Technologies Used
+
+The app was developed using the Swift programming language, using 100% native code. This means you don't need to install any dependencies to run the app.
 
 ## How to Use
 
 1. Install the app on your mobile device.
-2. Configure your daily work hours in the app's settings.
-3. The app will automatically calculate the estimated departure time and the total time worked on the current day.
+2. Configure your daily working hours in the app settings.
+3. The app will automatically calculate the estimated departure time and the time worked on the current day.
+
+## Key Learnings and Challenges
+
+### Programatically
+
+- Implementation of `Localization` in the app to switch between English and Portuguese based on the device's language settings.
+- Implementation of a user-configurable Theme (light/dark mode).
+- Use of `UserDefaults` to persist data related to the selected theme (light/dark mode) and user settings.
+- Utilization of `observers` to manage theme switching.
+- Creation of a `Toast` component to send user notifications, including configuration options for `success`, `failed`, `alert`, and `neutral` notifications.
+- Implementation of transition animations within the `Toast` component.
+
+### In Storyboard
+
+- Use of a set of adaptable colors based on the selected theme (light/dark mode).
+- Utilization of `stack view` to simplify the management of `constraints`.
+- Usage of `User Defined Runtime Attributes` to manage localization (language switching) within the storyboard.
+- Use of `@IBInspectable` to facilitate language changes in storyboard elements.
 
 ## Contributions
 
@@ -24,33 +66,4 @@ Contributions to the Daily Time Tracker App are welcome! Feel free to open issue
 
 This project is licensed under the [MIT License](LICENSE).
 
-Download the Daily Time Tracker App now and stay in control of your daily work hours!
-
-
-# Aplicativo Ponto Diário :br:
-
-Bem-vindo ao repositório do *Aplicativo Ponto Diário*!
-
-O Aplicativo Ponto Diário é uma ferramenta simples e prática para auxiliar os usuários a gerenciar sua jornada diária de trabalho. Este aplicativo foi projetado para calcular uma previsão do horário de saída com base nas horas de trabalho configuradas pelo usuário e exibir o tempo total trabalhado no dia atual.
-
-## Recursos
-
-- *Previsão de Saída:* Com base nas horas de trabalho definidas, o aplicativo calcula uma estimativa do horário de saída do usuário.
-- *Acompanhamento de Tempo:* Monitore o total de horas trabalhadas no dia atual.
-- *Configuração Personalizada:* Defina suas horas de trabalho diárias nas configurações do aplicativo.
-
-## Como Usar
-
-1. Instale o aplicativo em seu dispositivo móvel.
-2. Configure suas horas de trabalho diárias nas configurações do aplicativo.
-3. O aplicativo calculará automaticamente o horário estimado de saída e o tempo trabalhado no dia atual.
-
-## Contribuições
-
-Contribuições para o aplicativo Ponto Diário são bem-vindas! Sinta-se à vontade para abrir _issues_, enviar _pull requests_ ou sugerir novas _features_.
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
-Baixe agora o aplicativo Ponto Diário e mantenha-se no controle do seu tempo de trabalho diário!
+Download the Daily Time Tracker App now and keep track of your daily work hours!

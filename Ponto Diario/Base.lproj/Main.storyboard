@@ -171,7 +171,6 @@
                                                                                 <color key="textColor" name="cardLabelPrimary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
-                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Horas Trabalhadas:"/>
                                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="MainHome_Worked_hours"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>

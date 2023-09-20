@@ -8,8 +8,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    // TODO: fix alerts messages
     
     // MARK: Properties
     let strings = HomeViewControllerStringsEnum.self
